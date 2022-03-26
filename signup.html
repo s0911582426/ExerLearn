@@ -89,103 +89,219 @@
         <h2 class="text-center text-primary mb-3"><img class="pb-2" src="img/icon.png"
                 style="height: 6%;width: 6%;margin-right: 10px;"> 註冊會員 <img class="ms-2 pb-2" src="img/icon.png"
                 style="height: 6%;width: 6%;margin-right: 10px;"></h2>
-        <form class="bg-light py-4 px-5">
-            <div class="mb-3 row">
-                <label for="inputName" class="col-sm-2 col-form-label text-nowrap fw-bold">姓名</label>
-                <div class="col-sm-5">
+        <form class="bg-light p-4">
+            <div class="mb-3 input-group">
+                <hr class="col-5">
+                <label class="col-2 col-form-label text-nowrap text-center">個人資料</label>
+                <hr class="col-5">
+            </div>
+            <div class="mb-3 input-group">
+                <label for="inputName" class="col-2 col-form-label text-nowrap fw-bold">姓名</label>
+                <div class="col-6">
                     <input type="text" class="form-control rounded-3" id="inputName" type="text" maxlength="10">
                 </div>
             </div>
-            <div class="mb-3 row">
-                <label for="inputGender" class="col-sm-2 col-form-label text-nowrap fw-bold">性別</label>
-                <div class="col-sm-1 form-check form-check-inline col-form-label ms-3">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                        value="option1" checked>
-                    <label class="form-check-label" for="inlineRadio1">男</label>
+            <div class="mb-3 input-group">
+                <label for="inputBirthday" class="col-2 col-form-label text-nowrap fw-bold">生日</label>
+                <div class="col-6">
+                    <input type="date" class="form-control rounded-3" id="inputBirthday">
                 </div>
-                <div class="col-sm-1 form-check form-check-inline col-form-label">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+            </div>
+            <div class="mb-3 input-group">
+                <label for="inputGender" class="col-2 col-form-label text-nowrap fw-bold">生理性別</label>
+                <div class="col-1 form-check form-check-inline col-form-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioGender1"
+                        value="option1">
+                    <label class="form-check-label" for="radioGender1">男</label>
+                </div>
+                <div class="col-1 form-check form-check-inline col-form-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioGender2"
                         value="option2">
-                    <label class="form-check-label" for="inlineRadio2">女</label>
+                    <label class="form-check-label" for="radioGender2">女</label>
                 </div>
             </div>
-            <div class="mb-3 row">
-                <label for="inputBirthday" class="col-sm-2 col-form-label text-nowrap fw-bold">生日</label>
-                <div class="col-sm-5">
-                    <input type="text" class="form-control rounded-3" id="inputBirthday" type="date">
+            <div class="mb-5 input-group">
+                <label for="inputEmail" class="col-2 col-form-label text-nowrap fw-bold">電子信箱</label>
+                <div class="col-6 me-2">
+                    <input type="email" class="form-control rounded-3" id="inputEmail" placeholder="name@example.com">
+                </div>
+                <div class="col pt-1">
+                    <a class="btn btn-primary btn-sm rounded-3 fw-normal" style="padding: 5px 15px 3px 15px;"
+                        data-bs-toggle="modal" data-bs-target="#modalVerify">驗證</a>
+                </div>
+
+                <!--modalVerify Start-->
+                <div class="modal fade" id="modalVerify" tabindex="-1" aria-labelledby="modalVerifyLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header bg-light">
+                                <h5 class="modal-title text-danger" id="modalVerifyLabel">驗證電子信箱</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-start">
+                                <div class="mb-3 input-group">
+                                    <label for="inputTel1" class="col-2 col-form-label text-nowrap fw-bold">電子信箱</label>
+                                    <div class="col-6">
+                                        <input type="email" class="form-control rounded-3" id="inputEmail"
+                                            placeholder="name@example.com">
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label for="inputVerify"
+                                        class="col-2 col-form-label text-nowrap fw-bold">驗證碼</label>
+                                    <div class="col-3 me-2">
+                                        <input type="tel" class="form-control rounded-3 text-center" id="inputVerify"
+                                            maxlength="6">
+                                    </div>
+                                    <div class="col pt-1">
+                                        <button class="btn btn-primary btn-sm rounded-3 fw-normal text-nowrap"
+                                            style="padding: 5px 15px 3px 15px;">發送驗證碼</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary fw-normal rounded-3 pt-2"
+                                    data-bs-dismiss="modal">取消</button>
+                                <a class="btn btn-primary fw-normal rounded-3 pt-2" type="submit"
+                                    href="signup.html">確認</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--modalVerify End-->
+            </div>
+            <div class="mb-3 input-group">
+                <hr class="col-5">
+                <label class="col-2 col-form-label text-nowrap text-center">付款資料</label>
+                <hr class="col-5">
+            </div>
+            <div class="mb-3 input-group">
+                <label for="inputName1" class="col-2 col-form-label text-nowrap fw-bold">持卡人姓名</label>
+                <div class="col-6">
+                    <input type="text" class="form-control rounded-3" id="inputName1" type="text" maxlength="10">
                 </div>
             </div>
-            <div class="mb-3 row">
-                <label for="inputEmail" class="col-sm-2 col-form-label text-nowrap fw-bold">電子信箱</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control rounded-3" id="inputEmail">
+            <div class="mb-3 input-group">
+                <label for="inputName1" class="col-2 col-form-label text-nowrap fw-bold">信用卡卡號</label>
+                <div class="col-2">
+                    <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
+                        maxlength="4" placeholder="0000">
+                </div>
+                <p class="col-form-label mx-2">-</p>
+                <div class="col-2">
+                    <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
+                        maxlength="4" placeholder="0000">
+                </div>
+                <p class="col-form-label mx-2">-</p>
+                <div class="col-2">
+                    <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
+                        maxlength="4" placeholder="0000">
+                </div>
+                <p class="col-form-label mx-2">-</p>
+                <div class="col-2">
+                    <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
+                        maxlength="4" placeholder="0000">
                 </div>
             </div>
-            <div class="mb-5 row">
-                <label for="inputAddress" class="col-sm-2 col-form-label text-nowrap fw-bold">地址</label>
-                <div class="col-sm-3 mb-1">
-                    <input type="text" class="form-control rounded-3" placeholder="郵遞區號" type="number" minlength="3"
-                        maxlength="6">
+            <div class="mb-3 input-group">
+                <label for="inputName1" class="col-2 col-form-label text-nowrap fw-bold">有效期限</label>
+                <div class="col-2">
+                    <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
+                        maxlength="2" placeholder="MM">
                 </div>
-                <div class="col-sm-10 offset-md-2">
-                    <input type="text" class="form-control rounded-3" id="inputAddress">
+                <p class="col-form-label mx-2">/</p>
+                <div class="col-2 me-4">
+                    <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
+                        maxlength="2" placeholder="YY">
                 </div>
-            </div>
-            <hr>
-            <div class="mb-5 row">
-                <label for="inputName" class="col-sm-2 col-form-label text-nowrap fw-bold">付款資訊</label>
-                <div class="col-sm-10">
-                </div>
-            </div>
-            <hr>
-            <div class="mb-3 row">
-                <label for="inputName" class="col-sm-2 col-form-label text-nowrap fw-bold">帳號</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control rounded-3" id="inputName">
+                <label for="inputName1" class="col-1 col-form-label text-nowrap fw-bold me-3">安全碼</label>
+                <div class="col-2">
+                    <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
+                        maxlength="3" placeholder="123">
                 </div>
             </div>
-            <div class="mb-3 row">
-                <label for="inputName" class="col-sm-2 col-form-label text-nowrap fw-bold">密碼</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control rounded-3" id="inputName">
+            <div class="mb-3 input-group">
+                <label for="inputTel2" class="col-2 col-form-label text-nowrap fw-bold">手機號碼</label>
+                <div class="col-6 me-2">
+                    <input type="text" class="form-control rounded-3" id="inputTel2" type="text" maxlength="10"
+                        placeholder="0912345678">
                 </div>
             </div>
-            <div class="mb-3 row">
-                <label for="inputName" class="col-sm-2 col-form-label text-nowrap fw-bold">確認密碼</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control rounded-3" id="inputName">
+            <div class="mb-1 input-group">
+                <label for="inputAddress" class="col-2 col-form-label text-nowrap fw-bold">帳單地址</label>
+                <div class="col-3 me-2">
+                    <input type="text" class="form-control rounded-3 text-center" placeholder="郵遞區號" type="number"
+                        minlength="3" maxlength="6">
+                </div>
+                <div class="col-3 me-2">
+                    <select class="form-select rounded-3" aria-label="Default select example">
+                        <option selected>縣市</option>
+                        <option value="1">臺北市</option>
+                        <option value="2">新北市</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="form-select rounded-3" aria-label="Default select example">
+                        <option selected>鄉鎮市區</option>
+                        <option value="1">大安區</option>
+                    </select>
                 </div>
             </div>
-            <div class="row" style="margin-bottom: 100px;">
-                <label for="inputName" class="col-sm-2 col-form-label text-nowrap fw-bold">驗證碼</label>
-                <div class="col-sm-10">
+            <div class="col-10 offset-2 mb-5">
+                <input type="text" class="form-control rounded-3" id="inputAddress">
+            </div>
+            <div class="mb-3 input-group">
+                <hr class="col-5">
+                <label class="col-2 col-form-label text-nowrap text-center">登入資料</label>
+                <hr class="col-5">
+            </div>
+            <div class="input-group">
+                <label for="inputAccount" class="col-2 col-form-label text-nowrap fw-bold">帳號</label>
+                <div class="col-6">
+                    <input type="text" class="form-control rounded-3" id="inputAccount">
+                </div>
+            </div>
+            <div class="mb-3 col-9 offset-2">
+                <p class="col-form-label" style="font-size: smaller;">請使用半形輸入，5–30個英文、數字組合，不可與密碼相同。</p>
+            </div>
+            <div class="input-group">
+                <label for="inputPassword" class="col-2 col-form-label text-nowrap fw-bold">密碼</label>
+                <div class="col-6">
+                    <input type="text" class="form-control rounded-3" id="inputPassword">
+                </div>
+            </div>
+            <div class="mb-3 col-9 offset-2">
+                <p class="col-form-label" style="font-size: smaller;">請使用半形輸入，6–18個英文、數字組合，至少含1個英文，不可與帳號相同。</p>
+            </div>
+            <div class="input-group" style="margin-bottom: 100px;">
+                <label for="inputPasswordCheck" class="col-2 col-form-label text-nowrap fw-bold">確認密碼</label>
+                <div class="col-6">
+                    <input type="text" class="form-control rounded-3" id="inputPasswordCheck">
                 </div>
             </div>
             <div class="form-check mb-2">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                    Default checkbox
-                </label>
+                <input class="form-check-input" type="checkbox" id="agreeCheck1">
+                <label class="form-check-label" for="agreeCheck1">我同意訂閱 ExerLearn 電子報。</label>
             </div>
             <div class="form-check mb-5">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                    Default checkbox
-                </label>
+                <input class="form-check-input" type="checkbox" id="agreeCheck2">
+                <label class="form-check-label" for="agreeCheck2">我已閱讀並同意隱私權使用政策。</label>
             </div>
             <div class="text-center">
-                <a class="btn btn-lg btn-primary fw-bold col-sm-5 me-5" type="submit" href="login.html"
-                    style="padding-top: 10px;" data-bs-toggle="modal" data-bs-target="#exampleModal">送出</a>
-                <a class="btn btn-lg btn-primary fw-bold col-sm-5" type="reset" href="#"
+                <a class="btn btn-primary fw-bold col-4 me-5 rounded-3 fs-5" type="submit" href="login.html"
+                    style="padding-top: 10px;" data-bs-toggle="modal" data-bs-target="#modalSend">送出</a>
+                <a class="btn btn-primary fw-bold col-4 ms-3 rounded-3 fs-5" type="reset"
                     style="padding-top: 10px;">清除</a>
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                <!-- modalSend Start -->
+                <div class="modal fade" id="modalSend" tabindex="-1" aria-labelledby="modalSendLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">註冊會員</h5>
+                            <div class="modal-header bg-light">
+                                <h5 class="modal-title text-danger" id="modalSendLabel">註冊會員</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -200,6 +316,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- modalSend End -->
             </div>
         </form>
     </div>

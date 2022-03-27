@@ -47,7 +47,7 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm sticky-top p-0">
         <a href="home.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="m-0 text-primary"><img class="p-4" src="img/logo.png"
-                    style="height: 25%;width: 25%;margin-right: 15px;">
+                    style="max-height: 112px;width: auto;margin-right: 15px;">
             </h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -85,7 +85,7 @@
     <!-- Navbar End -->
 
     <!-- signup Start -->
-    <div class="form-signin mx-auto" style="padding-top: 60px;width: 585px;height: 100%;">
+    <div class="form-signin mx-auto" style="padding-top: 60px;padding-bottom: 20px;width: 585px;height: 100%;">
         <div class="wow fadeInDown" data-wow-delay="0.3s">
             <h2 class="text-center text-primary mb-3 fw-normal" style="font-family: 源流明體;"><img class="pb-2"
                     src="img/icon.png" style="height: 5%;width: 5%;margin-right: 15px;">註冊會員<img class="pb-2"
@@ -101,13 +101,13 @@
             <div class="mb-3 input-group">
                 <label for="inputName" class="col-2 col-form-label text-nowrap fw-bold">姓名</label>
                 <div class="col-6">
-                    <input type="text" class="form-control rounded-3" id="inputName" type="text" maxlength="10">
+                    <input type="text" class="form-control rounded-3" id="inputName" type="text" maxlength="10" required>
                 </div>
             </div>
             <div class="mb-3 input-group">
                 <label for="inputBirthday" class="col-2 col-form-label text-nowrap fw-bold">生日</label>
                 <div class="col-6">
-                    <input type="date" class="form-control rounded-3" id="inputBirthday">
+                    <input type="date" class="form-control rounded-3" id="inputBirthday" required>
                 </div>
             </div>
             <div class="mb-3 input-group">
@@ -296,9 +296,9 @@
             </div>
             <div class="text-center">
                 <a class="btn btn-primary fw-bold col-4 me-5 rounded-3 fs-5" type="submit" href="login.html"
-                style="font-family: 源流明體;padding-top: 10px;">送出</a>
+                    style="font-family: 源流明體;padding-top: 10px;">送出</a>
                 <a class="btn btn-primary fw-bold col-4 ms-3 rounded-3 fs-5" type="reset"
-                style="font-family: 源流明體;padding-top: 10px;">清除</a>
+                    style="font-family: 源流明體;padding-top: 10px;">清除</a>
             </div>
         </form>
     </div>

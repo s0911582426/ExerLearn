@@ -11,6 +11,8 @@
     --bs-danger: #0F3931;
     --bs-dark: #181d38;
     --bs-secondary: #6c757d;
+    --bs-black:#000000;
+    
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
@@ -50,7 +52,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #52565b;
+    color: #262626;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
@@ -67,7 +69,7 @@ body {
 
 hr {
     margin: 1rem 0;
-    color: inherit;
+    color: #52565b;
     background-color: currentColor;
     border: 0;
     opacity: .25
@@ -157,7 +159,8 @@ h6,
 
 p {
     margin-top: 0;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    color: #52565b;
 }
 
 abbr[title],
@@ -2050,7 +2053,7 @@ progress {
 }
 
 .form-control::placeholder {
-    color: #6c757d;
+    color: #7F7F7F;
     opacity: 1
 }
 
@@ -4083,7 +4086,7 @@ fieldset:disabled .btn {
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #0596a3
+    color: #36C5A9
 }
 
 .nav-link.disabled {
@@ -6588,8 +6591,10 @@ fieldset:disabled .btn {
 }
 
 .link-light:hover,
-.link-light:focus {
-    color: #6c757d
+.link-light:focus,
+.link-light:active {
+    text-decoration:underline;
+    color: #6c757d;
 }
 
 .link-dark {
@@ -6598,7 +6603,7 @@ fieldset:disabled .btn {
 
 .link-dark:hover,
 .link-dark:focus {
-    color: #181d38
+    color: #0F3931
 }
 
 .ratio {

@@ -45,11 +45,10 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm sticky-top p-0">
-        <a href="home.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img class="p-4" src="img/logo.png"
-                    style="max-height: 112px;width: auto;margin-right: 15px;">
-            </h2>
+        <a href="home.html" class="navbar-brand d-flex align-items-center">
+            <img class="img-fluid p-4" src="img/logo.png" style="max-height: 112px;width: auto;">
         </a>
+
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -83,6 +82,36 @@
         </div>
     </nav>
     <!-- Navbar End -->
+
+    <div class="container-xxl">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-6 col-12">
+                    <form class="bg-light p-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="mb-3 input-group">
+                            <hr class="col-5">
+                            <p class="col-2 col-form-label text-nowrap text-center">個人資料</p>
+                            <hr class="col-5">
+                        </div>
+                        <div class="mb-3 input-group">
+                            <label for="inputName" class="col-2 col-form-label text-nowrap fw-bold">姓名</label>
+                            <div class="col-6">
+                                <input type="text" class="form-control rounded-3" id="inputName" type="text"
+                                    maxlength="10" required>
+                            </div>
+                        </div>
+                        <div class="mb-3 input-group">
+                            <label for="inputName1" class="col-2 col-form-label text-nowrap fw-bold">持卡人姓名</label>
+                            <div class="col-6">
+                                <input type="text" class="form-control rounded-3" id="inputName1" type="text"
+                                    maxlength="10">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="text-center m-4">
         <a href="signup.html" class="h4 btn-primary"><u>btn-primary</u></a>

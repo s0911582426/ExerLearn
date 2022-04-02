@@ -94,7 +94,7 @@
                 <form class="bg-light p-3 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="mb-3 row align-items-center">
                         <hr class="col">
-                        <p class="col-lg-2 col-sm-3 col-4 text-nowrap text-center pt-1">個人資料</p>
+                        <p class="col-lg-2 col-sm-3 col-4 text-nowrap text-center pt-1 fs-5-5" style="color: rgba(38, 38, 38, 0.5);">個人資料</p>
                         <hr class="col">
                     </div>
                     <div class="mb-3 row align-items-center">
@@ -114,12 +114,12 @@
                         <label for="inputGender" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">生理性別</label>
                         <div class="col-sm-1 col-2 form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioGender1"
-                                value="option1">
+                                value="option1" required>
                             <label class="form-check-label" for="radioGender1">男</label>
                         </div>
                         <div class="col-1 form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioGender2"
-                                value="option2">
+                                value="option2" required>
                             <label class="form-check-label" for="radioGender2">女</label>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                         <label for="inputEmail" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">電子信箱</label>
                         <div class="col-lg-5 col-sm-7 col-9 me-2">
                             <input type="email" class="form-control rounded-3" id="inputEmail"
-                                placeholder="name@example.com">
+                                placeholder="name@example.com" required>
                         </div>
                         <div class="col">
                             <a class="btn-primary btn-sm rounded-3 fw-normal" style="padding: 5px 15px 3px 15px;"
@@ -150,7 +150,7 @@
                                                 class="col-lg-2 col-3 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 15px;">電子信箱</label>
                                             <div class="col-lg-9 col-sm-11 col">
                                                 <input type="email" class="form-control rounded-3" id="inputEmail"
-                                                    placeholder="name@example.com">
+                                                    placeholder="name@example.com" required>
                                             </div>
                                         </div>
                                         <div class="row align-items-center">
@@ -158,7 +158,7 @@
                                                 class="col-lg-2 col-3 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 15px;">驗證碼</label>
                                             <div class="col-lg-5 col-sm-7 col me-2">
                                                 <input type="tel" class="form-control rounded-3 text-center"
-                                                    id="inputVerify" maxlength="6">
+                                                    id="inputVerify" maxlength="6" required>
                                             </div>
                                             <div class="col">
                                                 <button class="btn-primary btn-sm rounded-3 fw-normal text-nowrap"
@@ -167,9 +167,9 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn-dark bg-secondary rounded-3"
+                                        <button type="button" class="btn-secondary rounded-3" style="padding-top: .35rem;"
                                             data-bs-dismiss="modal">取消</button>
-                                        <a class="btn-dark rounded-3" type="submit"
+                                        <a class="btn-primary rounded-3" type="submit" style="padding-top: .50rem;"
                                             href="signup.html">確認</a>
                                     </div>
                                 </div>
@@ -179,7 +179,7 @@
                     </div>
                     <div class="mb-3 row align-items-center">
                         <hr class="col">
-                        <p class="col-lg-2 col-sm-3 col-4 text-nowrap text-center pt-1">付款資料</p>
+                        <p class="col-lg-2 col-sm-3 col-4 text-nowrap text-center pt-1 fs-5-5" style="color: rgba(38, 38, 38, 0.5);">付款資料</p>
                         <hr class="col">
                     </div>
                     <div class="mb-3 row align-items-center">
@@ -264,13 +264,13 @@
                     </div>
                     <div class="mb-3 row align-items-center">
                         <hr class="col">
-                        <p class="col-lg-2 col-sm-3 col-4 text-nowrap text-center pt-1">登入資料</p>
+                        <p class="col-lg-2 col-sm-3 col-4 text-nowrap text-center pt-1 fs-5-5" style="color: rgba(38, 38, 38, 0.5);">登入資料</p>
                         <hr class="col">
                     </div>
                     <div class="row align-items-center">
                         <label for="inputAccount" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">帳號</label>
                         <div class="col-lg-5 col-sm-7 col">
-                            <input type="text" class="form-control rounded-3" id="inputAccount">
+                            <input type="text" class="form-control rounded-3" id="inputAccount" required>
                         </div>
                     </div>
                     <div class="mb-3 col-lg-10 offset-lg-2 col-sm-7 offset-sm-3 col offset-4">
@@ -279,7 +279,7 @@
                     <div class="row align-items-center">
                         <label for="inputPassword" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">密碼</label>
                         <div class="col-lg-5 col-sm-7 col">
-                            <input type="password" class="form-control rounded-3" id="inputPassword">
+                            <input type="password" class="form-control rounded-3" id="inputPassword" required>
                         </div>
                         <i class="text-primary col-auto bi bi-eye-fill fs-5 ms-2"></i>
                     </div>
@@ -290,7 +290,7 @@
                     <div class="row align-items-center" style="margin-bottom: 100px;">
                         <label for="inputPasswordCheck" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">確認密碼</label>
                         <div class="col-lg-5 col-sm-7 col">
-                            <input type="password" class="form-control rounded-3" id="inputPasswordCheck">
+                            <input type="password" class="form-control rounded-3" id="inputPasswordCheck" required>
                         </div>
                         <i class="text-primary col-auto bi bi-eye-fill fs-5 ms-2"></i>
                     </div>
@@ -299,11 +299,11 @@
                         <label class="form-check-label" for="agreeCheck1">我同意訂閱 ExerLearn 電子報。</label>
                     </div>
                     <div class="form-check mb-5">
-                        <input class="form-check-input" type="checkbox" id="agreeCheck2">
+                        <input class="form-check-input" type="checkbox" id="agreeCheck2" required>
                         <label class="form-check-label" for="agreeCheck2">我已閱讀並同意隱私權使用政策。</label>
                     </div>
                     <div class="text-center">
-                        <a class="btn-primary col-4 me-5 rounded-3 fs-5" type="submit" href="login.html">送出</a>
+                        <input class="btn-primary col-4 me-5 rounded-3 fs-5" type="submit" value="送出">
                         <input class="btn-primary col-4 ms-3 rounded-3 fs-5" type="reset" value="清除">
                     </div>
                 </form>

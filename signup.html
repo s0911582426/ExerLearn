@@ -83,7 +83,7 @@
 
     <!-- signup Start -->
     <div class="container-xxl">
-        <div class="row row-cols-auto justify-content-center">
+        <div class="row justify-content-center">
             <div class="form-signin col-xl-6 col-lg-7 col-md-8 col-sm-9 col-12 my-3">
                 <div class="wow fadeInDown mt-3" data-wow-delay="0.3s">
                     <h2 class="text-center text-primary"><img class="pb-2" src="img/icon.png"
@@ -91,46 +91,46 @@
                             style="height: 5%;width: 5%;margin-left: 15px;"></h2>
                 </div>
 
-                <form class="bg-light p-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="mb-3 row row-cols-auto">
-                        <hr class="col-5">
-                        <p class="col-2 col-form-label text-nowrap text-center">個人資料</p>
-                        <hr class="col-5">
+                <form class="bg-light p-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="mb-3 row align-items-center">
+                        <hr class="col">
+                        <p class="col-lg-2 col-sm-3 col-4 text-nowrap text-center pt-1">個人資料</p>
+                        <hr class="col">
                     </div>
-                    <div class="mb-3 row row-cols-auto">
-                        <label for="inputName" class="col-2 col-form-label text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">姓名</label>
-                        <div class="col-6">
+                    <div class="mb-3 row align-items-center">
+                        <label for="inputName" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">姓名</label>
+                        <div class="col-lg-5 col-sm-7 col">
                             <input type="text" class="form-control rounded-3" id="inputName" type="text" maxlength="10"
                                 required>
                         </div>
                     </div>
-                    <div class="mb-3 row row-cols-auto">
-                        <label for="inputBirthday" class="col-2 col-form-label text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">生日</label>
-                        <div class="col-6">
+                    <div class="mb-3 row align-items-center">
+                        <label for="inputBirthday" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">生日</label>
+                        <div class="col-lg-5 col-sm-7 col">
                             <input type="date" class="form-control rounded-3" id="inputBirthday" required>
                         </div>
                     </div>
-                    <div class="mb-3 row row-cols-auto">
-                        <label for="inputGender" class="col-2 col-form-label text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">生理性別</label>
-                        <div class="col-1 form-check form-check-inline col-form-label">
+                    <div class="mb-3 row align-items-center">
+                        <label for="inputGender" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">生理性別</label>
+                        <div class="col-sm-1 col-2 form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioGender1"
                                 value="option1">
                             <label class="form-check-label" for="radioGender1">男</label>
                         </div>
-                        <div class="col-1 form-check form-check-inline col-form-label">
+                        <div class="col-1 form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioGender2"
                                 value="option2">
                             <label class="form-check-label" for="radioGender2">女</label>
                         </div>
                     </div>
-                    <div class="mb-5 row row-cols-auto">
-                        <label for="inputEmail" class="col-2 col-form-label text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">電子信箱</label>
-                        <div class="col-6 me-2">
+                    <div class="mb-5 row align-items-center">
+                        <label for="inputEmail" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">電子信箱</label>
+                        <div class="col-lg-5 col-sm-7 col-9 me-2">
                             <input type="email" class="form-control rounded-3" id="inputEmail"
                                 placeholder="name@example.com">
                         </div>
-                        <div class="col pt-1">
-                            <a class="btn btn-primary btn-sm rounded-3 fw-normal" style="padding: 5px 15px 3px 15px;"
+                        <div class="col">
+                            <a class="btn-primary btn-sm rounded-3 fw-normal" style="padding: 5px 15px 3px 15px;"
                                 data-bs-toggle="modal" data-bs-target="#modalVerify">驗證</a>
                         </div>
 
@@ -140,36 +140,36 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header bg-light">
-                                        <h5 class="modal-title text-danger" id="modalVerifyLabel">驗證電子信箱</h5>
+                                        <p class="modal-title text-danger" id="modalVerifyLabel" style="font-size: 1.25rem;padding-top: 5px;">驗證電子信箱</p>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body text-start">
-                                        <div class="mb-3 row row-cols-auto">
+                                        <div class="mb-3 row align-items-center">
                                             <label for="inputTel1"
-                                                class="col-2 col-form-label text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">電子信箱</label>
-                                            <div class="col-6">
+                                                class="col-lg-2 col-3 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 15px;">電子信箱</label>
+                                            <div class="col-lg-9 col-sm-11 col">
                                                 <input type="email" class="form-control rounded-3" id="inputEmail"
                                                     placeholder="name@example.com">
                                             </div>
                                         </div>
-                                        <div class="row row-cols-auto">
+                                        <div class="row align-items-center">
                                             <label for="inputVerify"
-                                                class="col-2 col-form-label text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">驗證碼</label>
-                                            <div class="col-3 me-2">
+                                                class="col-lg-2 col-3 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 15px;">驗證碼</label>
+                                            <div class="col-lg-5 col-sm-7 col me-2">
                                                 <input type="tel" class="form-control rounded-3 text-center"
                                                     id="inputVerify" maxlength="6">
                                             </div>
-                                            <div class="col pt-1">
-                                                <button class="btn btn-primary btn-sm rounded-3 fw-normal text-nowrap"
+                                            <div class="col">
+                                                <button class="btn-primary btn-sm rounded-3 fw-normal text-nowrap"
                                                     style="padding: 5px 15px 3px 15px;">發送驗證碼</button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary fw-normal rounded-3 pt-2"
+                                        <button type="button" class="btn-dark bg-secondary rounded-3"
                                             data-bs-dismiss="modal">取消</button>
-                                        <a class="btn btn-primary fw-normal rounded-3 pt-2" type="submit"
+                                        <a class="btn-dark rounded-3" type="submit"
                                             href="signup.html">確認</a>
                                     </div>
                                 </div>
@@ -177,118 +177,122 @@
                         </div>
                         <!--modalVerify End-->
                     </div>
-                    <div class="mb-3 row row-cols-auto">
-                        <hr class="col-5">
-                        <p class="col-2 col-form-label text-nowrap text-center">付款資料</p>
-                        <hr class="col-5">
+                    <div class="mb-3 row align-items-center">
+                        <hr class="col">
+                        <p class="col-lg-2 col-sm-3 col-4 text-nowrap text-center pt-1">付款資料</p>
+                        <hr class="col">
                     </div>
-                    <div class="mb-3 row row-cols-auto">
-                        <label for="inputName1" class="col-2 col-form-label text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">持卡人姓名</label>
-                        <div class="col-6">
+                    <div class="mb-3 row align-items-center">
+                        <label for="inputName1" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">持卡人姓名</label>
+                        <div class="col-lg-5 col-sm-7 col">
                             <input type="text" class="form-control rounded-3" id="inputName1" type="text"
                                 maxlength="10">
                         </div>
                     </div>
-                    <div class="mb-3 row row-cols-auto">
-                        <label for="inputName1" class="col-2 col-form-label text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">信用卡卡號</label>
-                        <div class="col-2">
+                    <div class="mb-3 row align-items-center">
+                        <label for="inputName1" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">信用卡卡號</label>
+                        <p class="col-lg-auto col-8 col-form-label"></p>
+                        <div class="col-lg-1-5 col-sm-2 col-2-5">
                             <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
                                 maxlength="4" placeholder="0000">
                         </div>
-                        <p class="col-form-label mx-2">-</p>
-                        <div class="col-2">
+                        <p class="col-auto col-form-label mx-1">-</p>
+                        <div class="col-lg-1-5 col-sm-2 col-2-5">
                             <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
                                 maxlength="4" placeholder="0000">
                         </div>
-                        <p class="col-form-label mx-2">-</p>
-                        <div class="col-2">
+                        <p class="col-auto col-form-label mx-1">-</p>
+                        <div class="col-lg-1-5 col-sm-2 col-2-5">
                             <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
                                 maxlength="4" placeholder="0000">
                         </div>
-                        <p class="col-form-label mx-2">-</p>
-                        <div class="col-2">
+                        <p class="col-auto col-form-label mx-1">-</p>
+                        <div class="col-lg-1-5 col-sm-2 col-2-5">
                             <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
                                 maxlength="4" placeholder="0000">
                         </div>
                     </div>
-                    <div class="mb-3 row row-cols-auto">
-                        <label for="inputName1" class="col-2 col-form-label text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">有效期限</label>
-                        <div class="col-2">
+                    <div class="mb-3 row align-items-center">
+                        <label for="inputName1" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">有效期限</label>
+                        <p class="col-lg-auto col-8 col-form-label"></p>
+                        <div class="col-lg-1-5 col-sm-2 col-2-5">
                             <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
                                 maxlength="2" placeholder="MM">
                         </div>
-                        <p class="col-form-label mx-2">/</p>
-                        <div class="col-2 me-4">
+                        <p class="col-auto col-form-label mx-1">/</p>
+                        <div class="col-lg-1-5 col-sm-2 col-2-5 me-3">
                             <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
                                 maxlength="2" placeholder="YY">
                         </div>
-                        <label for="inputName1" class="col-1 col-form-label text-nowrap fw-bold me-3">安全碼</label>
-                        <div class="col-2">
+                        <label for="inputName1" class="col-sm-1-5 col-2-5 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">安全碼</label>
+                        <div class="col-lg-1-5 col-sm-2 col-2-5">
                             <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
                                 maxlength="3" placeholder="123">
                         </div>
                     </div>
-                    <div class="mb-3 row row-cols-auto">
-                        <label for="inputTel2" class="col-2 col-form-label text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">手機號碼</label>
-                        <div class="col-6 me-2">
+                    <div class="mb-3 row align-items-center">
+                        <label for="inputTel2" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">手機號碼</label>
+                        <div class="col-lg-5 col-sm-7 col me-2">
                             <input type="text" class="form-control rounded-3" id="inputTel2" type="text" maxlength="10"
                                 placeholder="0912345678">
                         </div>
                     </div>
-                    <div class="mb-1 row row-cols-auto">
-                        <label for="inputAddress" class="col-2 col-form-label text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">帳單地址</label>
-                        <div class="col-2 me-2">
+                    <div class="row align-items-center">
+                        <label for="inputAddress" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">帳單地址</label>
+                        <p class="col-lg-auto col-8 col-form-label"></p>
+                        <div class="col-lg-2 col-sm-3 col-4 me-2 mb-1">
                             <input type="text" class="form-control rounded-3 text-center" placeholder="郵遞區號"
                                 type="number" minlength="3" maxlength="6">
                         </div>
-                        <div class="col-3 me-2">
+                        <p class="col-lg-auto col-6 col-form-label"></p>
+                        <div class="col-lg-3 col-sm-4 col-5 me-2 mb-1">
                             <select class="form-select rounded-3" aria-label="Default select example">
                                 <option selected>縣市</option>
                                 <option value="1">臺北市</option>
                                 <option value="2">新北市</option>
                             </select>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-5 col-6 mb-1">
                             <select class="form-select rounded-3" aria-label="Default select example">
                                 <option selected>鄉鎮市區</option>
                                 <option value="1">大安區</option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-10 offset-2 mb-5">
+                    <div class="col-lg-10 offset-lg-2 col-12 mb-5">
                         <input type="text" class="form-control rounded-3" id="inputAddress">
                     </div>
-                    <div class="mb-3 row row-cols-auto">
-                        <hr class="col-5">
-                        <p class="col-2 col-form-label text-nowrap text-center">登入資料</p>
-                        <hr class="col-5">
+                    <div class="mb-3 row align-items-center">
+                        <hr class="col">
+                        <p class="col-lg-2 col-sm-3 col-4 text-nowrap text-center pt-1">登入資料</p>
+                        <hr class="col">
                     </div>
-                    <div class="row row-cols-auto">
-                        <label for="inputAccount" class="col-2 col-form-label text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">帳號</label>
-                        <div class="col-6">
+                    <div class="row align-items-center">
+                        <label for="inputAccount" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">帳號</label>
+                        <div class="col-lg-5 col-sm-7 col">
                             <input type="text" class="form-control rounded-3" id="inputAccount">
                         </div>
                     </div>
-                    <div class="mb-3 col-9 offset-2">
-                        <p class="col-form-label" style="font-size: smaller;">請使用半形輸入，5–30個英文、數字組合，不可與密碼相同。</p>
+                    <div class="mb-3 col-lg-10 offset-lg-2 col-sm-7 offset-sm-3 col offset-4">
+                        <p class="col-form-label" style="font-size: smaller;text-align: justify;">請使用半形輸入，5–30個英文、數字組合，不可與密碼相同。</p>
                     </div>
-                    <div class="row row-cols-auto">
-                        <label for="inputPassword" class="col-2 col-form-label text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">密碼</label>
-                        <div class="col-6">
+                    <div class="row align-items-center">
+                        <label for="inputPassword" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">密碼</label>
+                        <div class="col-lg-5 col-sm-7 col">
                             <input type="password" class="form-control rounded-3" id="inputPassword">
                         </div>
-                        <i class="btn col-1 col-form-label bi bi-eye-fill text-primary fs-5"></i>
+                        <i class="text-primary col-auto bi bi-eye-fill fs-5 ms-2"></i>
                     </div>
-                    <div class="mb-3 col-9 offset-2">
-                        <p class="col-form-label" style="font-size: smaller;">請使用半形輸入，6–18個英文、數字組合，至少含1個英文，不可與帳號相同。
+                    <div class="mb-3 col-lg-10 offset-lg-2 col-sm-7 offset-sm-3 col offset-4 ">
+                        <p class="col-form-label" style="font-size: smaller;text-align: justify;">請使用半形輸入，6–18個英文、數字組合，至少含1個英文，不可與帳號相同。
                         </p>
                     </div>
-                    <div class="row row-cols-auto" style="margin-bottom: 100px;">
-                        <label for="inputPasswordCheck" class="col-2 col-form-label text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">確認密碼</label>
-                        <div class="col-6">
+                    <div class="row align-items-center" style="margin-bottom: 100px;">
+                        <label for="inputPasswordCheck" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold" style="text-align-last: justify;padding-right: 20px;">確認密碼</label>
+                        <div class="col-lg-5 col-sm-7 col">
                             <input type="password" class="form-control rounded-3" id="inputPasswordCheck">
                         </div>
-                        <i class="btn col-1 col-form-label bi bi-eye-fill text-primary fs-5"></i>
+                        <i class="text-primary col-auto bi bi-eye-fill fs-5 ms-2"></i>
                     </div>
                     <div class="form-check mb-2">
                         <input class="form-check-input" type="checkbox" id="agreeCheck1">

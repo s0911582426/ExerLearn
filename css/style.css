@@ -1,12 +1,19 @@
 /********** Template CSS **********/
 :root {
-    --bs-primary: #36C5A9;
-    --bs-light: #DCF8F3;
     --bs-danger: #0F3931;
+    --bs-primary: #36C5A9;
+    --bs-primary-0: #75D9C6;
+    --bs-primary-1: #ABEEE3;
+    --bs-primary-2: #DCF8F3;
+    --bs-light: #F0FBFC;
     --bs-dark: #181d38;
-    --bs-secondary: #6c757d;
-    --bs-gray: #52565b;
-    --bs-black: #000000;   
+    --bs-gray: #262626;
+    --bs-secondary: #262626;
+    --bs-secondary-0: #6c757d;
+    --bs-secondary-1: #7F7F7F;
+
+    --bs-white: #FFFFFF;
+    --bs-black: #000000; 
 }
 
 .fw-medium {

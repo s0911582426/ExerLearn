@@ -4678,7 +4678,7 @@ fieldset:disabled .btn {
 .navbar-toggler:focus {
     text-decoration: none;
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(108, 117, 125, 0.8)
+    box-shadow: 0 0 0 .25rem rgba(54, 197, 169, 0.3)
 }
 
 .navbar-toggler-icon {
@@ -4920,8 +4920,8 @@ fieldset:disabled .btn {
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(0, 0, 0, 0.55);
-    border-color: rgba(0, 0, 0, 0.1)
+    color: #75D9C6;
+    border-color: #75D9C6
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -8542,8 +8542,28 @@ fieldset:disabled .btn {
     background-color: #36C5A9 !important
 }
 
+.bg-primary-0 {
+    background-color: #75D9C6 !important
+}
+
+.bg-primary-1 {
+    background-color: #ABEEE3 !important
+}
+
+.bg-primary-2 {
+    background-color: #DCF8F3 !important
+}
+
 .bg-secondary {
+    background-color: #262626 !important
+}
+
+.bg-secondary-0 {
     background-color: #6c757d !important
+}
+
+.bg-secondary-1 {
+    background-color: #7F7F7F !important
 }
 
 .bg-success {
@@ -8567,7 +8587,7 @@ fieldset:disabled .btn {
 }
 
 .bg-light {
-    background-color: #DCF8F3 !important
+    background-color: #F0FBFC !important
 }
 
 .bg-dark {

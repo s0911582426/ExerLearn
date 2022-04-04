@@ -4685,11 +4685,12 @@ fieldset:disabled .btn {
     }
 }
 
-.navbar-toggler:hover {
+.navbar-toggler:focus {
     text-decoration: none
 }
 
-.navbar-toggler:focus {
+.navbar-toggler:hover,
+.navbar-toggler:active {
     text-decoration: none;
     outline: 0;
     box-shadow: 0 0 0 .25rem rgba(54, 197, 169, 0.3)

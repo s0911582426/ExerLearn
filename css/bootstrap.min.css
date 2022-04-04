@@ -3179,13 +3179,13 @@ textarea.form-control.is-invalid {
 }
 
 .btn:hover {
-    color: #262626
+    color: #75D9C6
 }
 
 .btn-check:focus+.btn,
 .btn:focus {
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(6, 187, 204, 0.25)
+    box-shadow: 0 0 0 .25rem rgba(54, 197, 169, 0.3)
 }
 
 .btn:disabled,
@@ -3600,7 +3600,21 @@ fieldset:disabled .btn {
 .btn-outline-primary {
     color: #fff;
     border-color: #36C5A9;
-    background-color: #36C5A9
+    background-color: #36C5A9;
+
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .25rem .75rem;
+    padding-top: .50rem;
+    padding-left: .9rem;
+    border-radius: 0px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
 }
 
 .btn-outline-primary:hover {
@@ -4921,7 +4935,7 @@ fieldset:disabled .btn {
 
 .navbar-light .navbar-toggler {
     color: #75D9C6;
-    border-color: #75D9C6
+    border-color: rgba(117, 217, 198, 0.5)
 }
 
 .navbar-light .navbar-toggler-icon {

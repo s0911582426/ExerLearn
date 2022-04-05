@@ -33,7 +33,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body style="background-color: #FFF2CC;">
+<body style="background-color: darkslategray">
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -45,100 +45,120 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm sticky-top p-0">
-        <a href="home.html" class="navbar-brand d-flex align-items-center">
-            <img class="img-fluid p-4" src="img/logo.png" style="max-height: 112px;width: auto;">
+        <a href="home.html" class="navbar-brand d-sm-flex align-items-center d-none d-sm-block">
+            <img class="img-fluid p-4 pe-0" src="img/logo.png" style="max-height: 112px;width: auto;">
+        </a>
+        <a href="home.html" class="navbar-brand d-flex align-items-center d-sm-none">
+            <img class="img-fluid p-3 pe-0" src="img/logo.png" style="max-height: 92px;width: auto;">
         </a>
 
-        <button type="button" class="navbar-toggler me-4 rounded-3" data-bs-toggle="collapse"
+        <button type="button" class="navbar-toggler me-3 rounded-3 bg-primary-2"
+            style="padding-top: 5px;padding-bottom: 2px;padding-left: 14px;" data-bs-toggle="collapse"
             data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-list text-primary" style="font-size: 30px;"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0 text-nowrap">
-                <a href="home.html" class="nav-item nav-link fs-6">首頁</a>
-                <a href="about.html" class="nav-item nav-link fs-6">關於我們</a>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fs-6" data-bs-toggle="dropdown">學習天地</a>
-                    <div class="dropdown-menu fade-down m-0 fs-6">
+            <div class="navbar-nav ms-auto text-nowrap">
+                <a href="home.html" class="nav-item align-self-center nav">首頁</a>
+                <a href="about.html" class="nav-item align-self-center nav">關於我們</a>
+                <div class="align-self-center nav-item dropdown">
+                    <a class="nav dropdown-toggle" data-bs-toggle="dropdown">學習天地</a>
+                    <div class="dropdown-menu fade-down">
                         <a href="search.html" class="dropdown-item">查詢運動</a>
                         <a href="recommend.html" class="dropdown-item">運動推薦</a>
                         <a href="reserve.html" class="dropdown-item">預約課程</a>
                     </div>
                 </div>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fs-6" data-bs-toggle="dropdown">會員中心</a>
-                    <div class="dropdown-menu fade-down m-0 fs-6">
+                <div class="align-self-center nav-item dropdown">
+                    <a class="nav dropdown-toggle me-lg-3" data-bs-toggle="dropdown">會員中心</a>
+                    <div class="dropdown-menu fade-down mb-lg-0 mb-2">
                         <a href="information.html" class="dropdown-item">我的資訊</a>
                         <a href="healthy.html" class="dropdown-item">健康護照</a>
                         <a href="record.html" class="dropdown-item">瀏覽紀錄</a>
                     </div>
                 </div>
-                <a href="login.html" class="btn-outline-primary py-4 px-lg-5 d-none d-lg-block text-nowrap fs-5-5"
-                    type="button">登入 /
-                    註冊</a>
+                <a href="login.html" class="btn-outline-primary py-lg-4 px-lg-5 fs-5-5" type="button">登入 / 註冊
+                </a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
-    <div class="mb-3 row">
-        <label for="inputName" class="col-1 text-end col-form-label text-nowrap fw-bold">姓名</label>
-        <div class="col-6">
-            <input type="text" class="form-control rounded-3" id="inputName" type="text" maxlength="10" required>
+    <!-- test Start -->
+    <div class="row justify-content-center align-items-center">
+        <div class="text-center m-3 col-md-2">
+            <a href="#" class="h4 btn-primary">btn-primary</a>
+            <p class="col-form-label text-white" style="font-size: smaller;">綠，背景深淺變化，文字白</p>
+        </div>
+        <div class="text-center m-3 col-md-3">
+            <a href="#" class="h4 btn-outline-primary">btn-outline-primary</a>
+            <p class="col-form-label text-white" style="font-size: smaller;">綠，背景深淺變化，文字白轉深綠</p>
+        </div>
+        <div class="text-center m-3 col-md-2">
+            <a href="#" class="h4 link-primary">link-primary</a>
+            <p class="col-form-label text-white" style="font-size: smaller;">文字深淺變化</p>
+        </div>
+        <div class="text-center m-3 col-md-2">
+            <a href="#" class="h4 link-primary-0">link-primary-0</a>
+            <p class="col-form-label text-white" style="font-size: smaller;">文字深淺變化，出現底線</p>
         </div>
     </div>
-
-    <div class="text-center m-4">
-        <a href="signup.html" class="h4 btn-primary"><u>btn-primary</u></a>
-        <p class="col-form-label text-danger" style="font-size: smaller;">綠，背景深淺變化，文字深綠</p>
+    <div class="row justify-content-center align-items-center">
+        <div class="text-center m-3 col-md-2">
+            <a href="#" class="h4 btn-light">btn-light</a>
+            <p class="col-form-label text-white" style="font-size: smaller;">淺綠，背景深淺變化，文字綠</p>
+        </div>
+        <div class="text-center m-3 col-md-2">
+            <a href="#" class="h4 btn-outline-light">btn-outline-light</a>
+            <p class="col-form-label text-white" style="font-size: smaller;">淺綠，背景深淺變化，文字綠轉深綠</p>
+        </div>
+        <div class="text-center m-3 col-md-2">
+            <a href="#" class="h4 link-light">link-light</a>
+            <p class="col-form-label text-white" style="font-size: smaller;">文字綠轉灰，出現底線</p>
+        </div>
     </div>
-    <div class="text-center m-4">
-        <a href="signup.html" class="h4 btn-outline-primary"><u>btn-outline-primary</u></a>
-        <p class="col-form-label text-danger" style="font-size: smaller;">綠，背景深淺變化，文字白轉深綠</p>
+    <div class="row justify-content-center align-items-center">
+        <div class="text-center m-3 col-md-2">
+            <a href="#" class="h4 btn-danger">btn-danger</a>
+            <p class="col-form-label text-white" style="font-size: smaller;">深綠，背景、文字前後相反</p>
+        </div>
+        <div class="text-center m-3 col-md-2">
+            <a href="#" class="h4 link-danger">link-danger</a>
+            <p class="col-form-label text-white" style="font-size: smaller;">文字深綠轉綠</p>
+        </div>
     </div>
-    <div class="text-center m-4">
-        <a href="signup.html" class="h4 btn-light"><u>btn-light</u></a>
-        <p class="col-form-label text-danger" style="font-size: smaller;">淺綠，背景深淺變化，文字深綠</p>
+    <div class="row justify-content-center align-items-center">
+        <div class="text-center m-3 col-md-2">
+            <a href="#" class="h4 btn-secondary">btn-secondary</a>
+            <p class="col-form-label text-white" style="font-size: smaller;">灰，背景深淺變化，文字白</p>
+        </div>
+        <div class="text-center m-3 col-md-3">
+            <a href="#" class="h4 btn-outline-secondary">btn-outline-secondary</a>
+            <p class="col-form-label text-white" style="font-size: smaller;">灰，背景深淺變化，文字白轉黑</p>
+        </div>
+        <div class="text-center m-3 col-md-2">
+            <a href="#" class="h4 link-secondary">link-secondary</a>
+            <p class="col-form-label text-white" style="font-size: smaller;">文字灰轉深綠</p>
+        </div>
     </div>
-    <div class="text-center m-4">
-        <a href="signup.html" class="h4 btn-outline-light"><u>btn-outline-light</u></a>
-        <p class="col-form-label text-danger" style="font-size: smaller;">淺綠，背景深淺變化，文字綠轉深綠</p>
+    <div class="row justify-content-center align-items-center">
+        <div class="text-center m-3 col-md-2">
+            <a href="#" class="h4 btn-litem">btn-litem</a>
+            <p class="col-form-label text-white" style="font-size: smaller;">清單按鈕</p>
+        </div>
     </div>
-    <div class="text-center m-4">
-        <a href="signup.html" class="h4 btn-danger"><u>btn-danger</u></a>
-        <p class="col-form-label text-danger" style="font-size: smaller;">前後撞色相反</p>
-    </div>
-    <div class="text-center m-4">
-        <a href="signup.html" class="h4 link-primary"><u>link-primary</u></a>
-        <p class="col-form-label text-danger" style="font-size: smaller;">文字深淺變化</p>
-    </div>
-    <div class="text-center m-4">
-        <a href="signup.html" class="h4 link-light">link-light</a>
-        <p class="col-form-label text-danger" style="font-size: smaller;">文字綠轉灰，出現底線</p>
-    </div>
-    <div class="text-center m-4">
-        <a href="signup.html" class="h4 link-dark"><u>link-dark</u></a>
-        <p class="col-form-label text-danger" style="font-size: smaller;">文字淺深變化</p>
-    </div>
-    <div class="text-center m-4">
-        <a href="signup.html" class="h4 link-danger"><u>link-danger</u></a>
-        <p class="col-form-label text-danger" style="font-size: smaller;">文字深綠轉綠</p>
-    </div>
-    <div class="text-center m-4">
-        <a href="signup.html" class="h4 link-white"><u>link-white</u></a>
-        <p class="col-form-label text-danger" style="font-size: smaller;">文字深綠轉綠</p>
-    </div>
+    <!-- test End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid footer bg-danger wow fadeIn" data-wow-delay="0.1s">
         <div class="container pt-2 pb-4">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-white">
+                <div class="col-lg-3 col-md-6 ">
                     <h4 class="text-light mb-3">快速連結</h4>
-                    <a class="btn btn-link" href="about.html">關於我們</a>
-                    <a class="btn btn-link" href="search.html">查詢運動</a>
-                    <a class="btn btn-link" href="recommend.html">運動推薦</a>
-                    <a class="btn btn-link" href="reserve.html">預約課程</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="about.html">關於我們</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="search.html">查詢運動</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="recommend.html">運動推薦</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="reserve.html">預約課程</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-3">聯絡資訊</h4>
@@ -205,10 +225,9 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
-    <a class="btn-lg btn-primary btn-lg-square back-to-top pt-1 d-none d-sm-block"><i class="bi bi-arrow-up"></i></a>
-
+    <a class="btn-lg btn-primary btn-lg-square back-to-top d-none d-sm-block" style="padding-top: 10px;"><i
+            class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

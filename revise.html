@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>註冊會員 - ExerLearn</title>
+    <title>修改密碼 - ExerLearn</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -45,272 +45,57 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm sticky-top p-0">
-        <a href="home.html" class="navbar-brand d-flex align-items-center">
-            <img class="img-fluid p-4" src="img/logo.png" style="max-height: 112px;width: auto;">
+        <a href="home.html" class="navbar-brand d-sm-flex align-items-center d-none d-sm-block">
+            <img class="img-fluid p-4 pe-0" src="img/logo.png" style="max-height: 112px;width: auto;">
+        </a>
+        <a href="home.html" class="navbar-brand d-flex align-items-center d-sm-none">
+            <img class="img-fluid p-3 pe-0" src="img/logo.png" style="max-height: 92px;width: auto;">
         </a>
 
-        <button type="button" class="navbar-toggler me-4 rounded-3" data-bs-toggle="collapse"
+        <button type="button" class="navbar-toggler me-3 rounded-3 bg-primary-2"
+            style="padding-top: 5px;padding-bottom: 2px;padding-left: 14px;" data-bs-toggle="collapse"
             data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-list text-primary" style="font-size: 30px;"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0 text-nowrap">
-                <a href="home.html" class="nav-item nav-link fs-6">首頁</a>
-                <a href="about.html" class="nav-item nav-link fs-6">關於我們</a>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fs-6" data-bs-toggle="dropdown">學習天地</a>
-                    <div class="dropdown-menu fade-down m-0 fs-6">
+            <div class="navbar-nav ms-auto text-nowrap">
+                <a href="home.html" class="nav-item align-self-center nav">首頁</a>
+                <a href="about.html" class="nav-item align-self-center nav">關於我們</a>
+                <div class="align-self-center nav-item dropdown">
+                    <a class="nav dropdown-toggle" data-bs-toggle="dropdown">學習天地</a>
+                    <div class="dropdown-menu fade-down">
                         <a href="search.html" class="dropdown-item">查詢運動</a>
                         <a href="recommend.html" class="dropdown-item">運動推薦</a>
                         <a href="reserve.html" class="dropdown-item">預約課程</a>
                     </div>
                 </div>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fs-6" data-bs-toggle="dropdown">會員中心</a>
-                    <div class="dropdown-menu fade-down m-0 fs-6">
+                <div class="align-self-center nav-item dropdown">
+                    <a class="nav dropdown-toggle me-lg-3" data-bs-toggle="dropdown">會員中心</a>
+                    <div class="dropdown-menu fade-down mb-lg-0 mb-2">
                         <a href="information.html" class="dropdown-item">我的資訊</a>
                         <a href="healthy.html" class="dropdown-item">健康護照</a>
                         <a href="record.html" class="dropdown-item">瀏覽紀錄</a>
                     </div>
                 </div>
+                <a href="login.html" class="btn-outline-primary py-lg-4 px-lg-5 fs-5-5" type="button">登入 / 註冊
+                </a>
             </div>
-            <a href="login.html" class="btn btn-outline-primary py-4 px-lg-5 d-none d-lg-block text-nowrap fs-6">登入 /
-                註冊</a>
         </div>
     </nav>
     <!-- Navbar End -->
 
-    <!-- signup Start -->
-    <div class="form-signin mx-auto" style="padding-top: 60px;padding-bottom: 20px;width: 585px;height: 100%;">
-        <div class="wow fadeInDown" data-wow-delay="0.3s">
-            <h2 class="text-center text-primary mb-3 fw-normal" style="font-family: 源流明體;"><img class="pb-2"
-                    src="img/icon.png" style="height: 5%;width: 5%;margin-right: 15px;">註冊會員<img class="pb-2"
-                    src="img/icon.png" style="height: 5%;width: 5%;margin-left: 15px;"></h2>
-        </div>
 
-        <form class="bg-light p-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="mb-3 input-group">
-                <hr class="col-5">
-                <p class="col-2 col-form-label text-nowrap text-center">個人資料</p>
-                <hr class="col-5">
-            </div>
-            <div class="mb-3 input-group">
-                <label for="inputName" class="col-2 col-form-label text-nowrap fw-bold">姓名</label>
-                <div class="col-6">
-                    <input type="text" class="form-control rounded-3" id="inputName" type="text" maxlength="10"
-                        required>
-                </div>
-            </div>
-            <div class="mb-3 input-group">
-                <label for="inputBirthday" class="col-2 col-form-label text-nowrap fw-bold">生日</label>
-                <div class="col-6">
-                    <input type="date" class="form-control rounded-3" id="inputBirthday" required>
-                </div>
-            </div>
-            <div class="mb-3 input-group">
-                <label for="inputGender" class="col-2 col-form-label text-nowrap fw-bold">生理性別</label>
-                <div class="col-1 form-check form-check-inline col-form-label">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioGender1"
-                        value="option1">
-                    <label class="form-check-label" for="radioGender1">男</label>
-                </div>
-                <div class="col-1 form-check form-check-inline col-form-label">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioGender2"
-                        value="option2">
-                    <label class="form-check-label" for="radioGender2">女</label>
-                </div>
-            </div>
-            <div class="mb-5 input-group">
-                <label for="inputEmail" class="col-2 col-form-label text-nowrap fw-bold">電子信箱</label>
-                <div class="col-6 me-2">
-                    <input type="email" class="form-control rounded-3" id="inputEmail" placeholder="name@example.com">
-                </div>
-                <div class="col pt-1">
-                    <a class="btn btn-primary btn-sm rounded-3 fw-normal" style="padding: 5px 15px 3px 15px;"
-                        data-bs-toggle="modal" data-bs-target="#modalVerify">驗證</a>
-                </div>
-
-                <!--modalVerify Start-->
-                <div class="modal fade" id="modalVerify" tabindex="-1" aria-labelledby="modalVerifyLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header bg-light">
-                                <h5 class="modal-title text-danger" id="modalVerifyLabel">驗證電子信箱</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body text-start">
-                                <div class="mb-3 input-group">
-                                    <label for="inputTel1" class="col-2 col-form-label text-nowrap fw-bold">電子信箱</label>
-                                    <div class="col-6">
-                                        <input type="email" class="form-control rounded-3" id="inputEmail"
-                                            placeholder="name@example.com">
-                                    </div>
-                                </div>
-                                <div class="input-group">
-                                    <label for="inputVerify"
-                                        class="col-2 col-form-label text-nowrap fw-bold">驗證碼</label>
-                                    <div class="col-3 me-2">
-                                        <input type="tel" class="form-control rounded-3 text-center" id="inputVerify"
-                                            maxlength="6">
-                                    </div>
-                                    <div class="col pt-1">
-                                        <button class="btn btn-primary btn-sm rounded-3 fw-normal text-nowrap"
-                                            style="padding: 5px 15px 3px 15px;">發送驗證碼</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary fw-normal rounded-3 pt-2"
-                                    data-bs-dismiss="modal">取消</button>
-                                <a class="btn btn-primary fw-normal rounded-3 pt-2" type="submit"
-                                    href="signup.html">確認</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--modalVerify End-->
-            </div>
-            <div class="mb-3 input-group">
-                <hr class="col-5">
-                <p class="col-2 col-form-label text-nowrap text-center">付款資料</p>
-                <hr class="col-5">
-            </div>
-            <div class="mb-3 input-group">
-                <label for="inputName1" class="col-2 col-form-label text-nowrap fw-bold">持卡人姓名</label>
-                <div class="col-6">
-                    <input type="text" class="form-control rounded-3" id="inputName1" type="text" maxlength="10">
-                </div>
-            </div>
-            <div class="mb-3 input-group">
-                <label for="inputName1" class="col-2 col-form-label text-nowrap fw-bold">信用卡卡號</label>
-                <div class="col-2">
-                    <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
-                        maxlength="4" placeholder="0000">
-                </div>
-                <p class="col-form-label mx-2">-</p>
-                <div class="col-2">
-                    <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
-                        maxlength="4" placeholder="0000">
-                </div>
-                <p class="col-form-label mx-2">-</p>
-                <div class="col-2">
-                    <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
-                        maxlength="4" placeholder="0000">
-                </div>
-                <p class="col-form-label mx-2">-</p>
-                <div class="col-2">
-                    <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
-                        maxlength="4" placeholder="0000">
-                </div>
-            </div>
-            <div class="mb-3 input-group">
-                <label for="inputName1" class="col-2 col-form-label text-nowrap fw-bold">有效期限</label>
-                <div class="col-2">
-                    <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
-                        maxlength="2" placeholder="MM">
-                </div>
-                <p class="col-form-label mx-2">/</p>
-                <div class="col-2 me-4">
-                    <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
-                        maxlength="2" placeholder="YY">
-                </div>
-                <label for="inputName1" class="col-1 col-form-label text-nowrap fw-bold me-3">安全碼</label>
-                <div class="col-2">
-                    <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
-                        maxlength="3" placeholder="123">
-                </div>
-            </div>
-            <div class="mb-3 input-group">
-                <label for="inputTel2" class="col-2 col-form-label text-nowrap fw-bold">手機號碼</label>
-                <div class="col-6 me-2">
-                    <input type="text" class="form-control rounded-3" id="inputTel2" type="text" maxlength="10"
-                        placeholder="0912345678">
-                </div>
-            </div>
-            <div class="mb-1 input-group">
-                <label for="inputAddress" class="col-2 col-form-label text-nowrap fw-bold">帳單地址</label>
-                <div class="col-3 me-2">
-                    <input type="text" class="form-control rounded-3 text-center" placeholder="郵遞區號" type="number"
-                        minlength="3" maxlength="6">
-                </div>
-                <div class="col-3 me-2">
-                    <select class="form-select rounded-3" aria-label="Default select example">
-                        <option selected>縣市</option>
-                        <option value="1">臺北市</option>
-                        <option value="2">新北市</option>
-                    </select>
-                </div>
-                <div class="col">
-                    <select class="form-select rounded-3" aria-label="Default select example">
-                        <option selected>鄉鎮市區</option>
-                        <option value="1">大安區</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-10 offset-2 mb-5">
-                <input type="text" class="form-control rounded-3" id="inputAddress">
-            </div>
-            <div class="mb-3 input-group">
-                <hr class="col-5">
-                <p class="col-2 col-form-label text-nowrap text-center">登入資料</p>
-                <hr class="col-5">
-            </div>
-            <div class="input-group">
-                <label for="inputAccount" class="col-2 col-form-label text-nowrap fw-bold">帳號</label>
-                <div class="col-6">
-                    <input type="text" class="form-control rounded-3" id="inputAccount">
-                </div>
-            </div>
-            <div class="mb-3 col-9 offset-2">
-                <p class="col-form-label" style="font-size: smaller;">請使用半形輸入，5–30個英文、數字組合，不可與密碼相同。</p>
-            </div>
-            <div class="input-group">
-                <label for="inputPassword" class="col-2 col-form-label text-nowrap fw-bold">密碼</label>
-                <div class="col-6">
-                    <input type="password" class="form-control rounded-3" id="inputPassword">
-                </div>
-                <i class="btn col-1 col-form-label bi bi-eye-fill text-primary fs-5"></i>
-            </div>
-            <div class="mb-3 col-9 offset-2">
-                <p class="col-form-label" style="font-size: smaller;">請使用半形輸入，6–18個英文、數字組合，至少含1個英文，不可與帳號相同。</p>
-            </div>
-            <div class="input-group" style="margin-bottom: 100px;">
-                <label for="inputPasswordCheck" class="col-2 col-form-label text-nowrap fw-bold">確認密碼</label>
-                <div class="col-6">
-                    <input type="password" class="form-control rounded-3" id="inputPasswordCheck">
-                </div>
-                <i class="btn col-1 col-form-label bi bi-eye-fill text-primary fs-5"></i>
-            </div>
-            <div class="form-check mb-2">
-                <input class="form-check-input" type="checkbox" id="agreeCheck1">
-                <label class="form-check-label" for="agreeCheck1">我同意訂閱 ExerLearn 電子報。</label>
-            </div>
-            <div class="form-check mb-5">
-                <input class="form-check-input" type="checkbox" id="agreeCheck2">
-                <label class="form-check-label" for="agreeCheck2">我已閱讀並同意隱私權使用政策。</label>
-            </div>
-            <div class="text-center">
-                <a class="btn btn-primary fw-bold col-4 me-5 rounded-3 fs-5" type="submit" href="login.html"
-                    style="font-family: 源流明體;padding-top: 10px;">送出</a>
-                <a class="btn btn-primary fw-bold col-4 ms-3 rounded-3 fs-5" type="reset"
-                    style="font-family: 源流明體;padding-top: 10px;">清除</a>
-            </div>
-        </form>
-    </div>
-    <!-- signup End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6 text-white">
+    <div class="container-fluid footer bg-danger wow fadeIn" data-wow-delay="0.1s">
+        <div class="container pt-2 pb-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 ">
                     <h4 class="text-light mb-3">快速連結</h4>
-                    <a class="btn btn-link" href="about.html">關於我們</a>
-                    <a class="btn btn-link" href="search.html">查詢運動</a>
-                    <a class="btn btn-link" href="recommend.html">運動推薦</a>
-                    <a class="btn btn-link" href="reserve.html">預約課程</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="about.html">關於我們</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="search.html">查詢運動</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="recommend.html">運動推薦</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="reserve.html">預約課程</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-3">聯絡資訊</h4>
@@ -377,10 +162,9 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
-    <a class="btn btn-lg btn-primary btn-lg-square back-to-top pt-1"><i class="bi bi-arrow-up"></i></a>
-
+    <a class="btn-lg btn-primary btn-lg-square back-to-top d-none d-sm-block" style="padding-top: 10px;"><i
+            class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

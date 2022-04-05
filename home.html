@@ -45,16 +45,20 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm sticky-top p-0">
-        <a href="home.html" class="navbar-brand d-flex align-items-center">
-            <img class="img-fluid p-4" src="img/logo.png" style="max-height: 112px;width: auto;">
+        <a href="home.html" class="navbar-brand d-sm-flex align-items-center d-none d-sm-block">
+            <img class="img-fluid p-4 pe-0" src="img/logo.png" style="max-height: 112px;width: auto;">
+        </a>
+        <a href="home.html" class="navbar-brand d-flex align-items-center d-sm-none">
+            <img class="img-fluid p-3 pe-0" src="img/logo.png" style="max-height: 92px;width: auto;">
         </a>
 
-        <button type="button" class="navbar-toggler me-4 rounded-3" data-bs-toggle="collapse"
+        <button type="button" class="navbar-toggler me-3 rounded-3 bg-primary-2"
+            style="padding-top: 5px;padding-bottom: 2px;padding-left: 14px;" data-bs-toggle="collapse"
             data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-list text-primary" style="font-size: 30px;"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0 text-nowrap">
+            <div class="navbar-nav ms-auto text-nowrap">
                 <a href="home.html" class="nav-item align-self-center nav active">首頁</a>
                 <a href="about.html" class="nav-item align-self-center nav">關於我們</a>
                 <div class="align-self-center nav-item dropdown">
@@ -66,16 +70,15 @@
                     </div>
                 </div>
                 <div class="align-self-center nav-item dropdown">
-                    <a class="nav dropdown-toggle me-3" data-bs-toggle="dropdown">會員中心</a>
-                    <div class="dropdown-menu fade-down">
+                    <a class="nav dropdown-toggle me-lg-3" data-bs-toggle="dropdown">會員中心</a>
+                    <div class="dropdown-menu fade-down mb-lg-0 mb-2">
                         <a href="information.html" class="dropdown-item">我的資訊</a>
                         <a href="healthy.html" class="dropdown-item">健康護照</a>
                         <a href="record.html" class="dropdown-item">瀏覽紀錄</a>
                     </div>
                 </div>
-                <a href="login.html" class="nav-item btn-outline-primary align-self-center py-4 px-lg-5  d-lg-block fs-5-5">登入 / 註冊</a>
-                <a href="login.html" class="btn-outline-primary py-4 px-lg-5 d-none d-lg-block text-nowrap fs-5-5"
-                    type="button">登入 / 註冊</a>
+                <a href="login.html" class="btn-outline-primary py-lg-4 px-lg-5 fs-5-5" type="button">登入 / 註冊
+                </a>
             </div>
         </div>
     </nav>
@@ -84,37 +87,39 @@
     <!-- 輪播 (Carousel) Start -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/carousel-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/carousel-2.jpg" class="d-block w-100" alt="...">
-          </div>
+            <div class="carousel-item active">
+                <img src="img/carousel.png" class="d-block w-100" alt="...">
+            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true" style="height: 30%;width: 30%;"></span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="height: 30%;width: 30%;"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
-      </div>
-      <!-- 輪播 (Carousel) End -->
+    </div>
+    <!-- 輪播 (Carousel) End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid footer bg-danger wow fadeIn" data-wow-delay="0.1s">
         <div class="container pt-2 pb-4">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-white">
+                <div class="col-lg-3 col-md-6 ">
                     <h4 class="text-light mb-3">快速連結</h4>
-                    <a class="btn btn-link" href="about.html">關於我們</a>
-                    <a class="btn btn-link" href="search.html">查詢運動</a>
-                    <a class="btn btn-link" href="recommend.html">運動推薦</a>
-                    <a class="btn btn-link" href="login.html">登入 / 註冊</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="about.html">關於我們</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="search.html">查詢運動</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="recommend.html">運動推薦</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="reserve.html">預約課程</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-3">聯絡資訊</h4>
@@ -182,7 +187,8 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a class="btn-lg btn-primary btn-lg-square back-to-top pt-1"><i class="bi bi-arrow-up"></i></a>
+    <a class="btn-lg btn-primary btn-lg-square back-to-top d-none d-sm-block" style="padding-top: 10px;"><i
+            class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

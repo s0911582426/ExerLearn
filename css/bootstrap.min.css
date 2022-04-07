@@ -5740,7 +5740,7 @@ fieldset:disabled .btn {
 }
 
 .list-group-item-action {
-    width: 100%;
+    width: 130%;
     color: #495057;
     text-align: inherit
 }
@@ -6994,8 +6994,8 @@ fieldset:disabled .btn {
     width: 8px;
     height: 8px;
     padding: 0;
-    margin-right: 3px;
-    margin-left: 3px;
+    margin-right: 4px;
+    margin-left: 4px;
     text-indent: -999px;
     cursor: pointer;
     background-color: #75D9C6    ;

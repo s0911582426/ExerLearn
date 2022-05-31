@@ -66,7 +66,7 @@
                     <div class="dropdown-menu fade-down">
                         <a href="search.html" class="dropdown-item">查詢運動</a>
                         <a href="recommend.html" class="dropdown-item">運動推薦</a>
-                        <a href="reserve.html" class="dropdown-item">預約課程</a>
+                        <a href="reserve.html" class="dropdown-item">課程學習</a>
                     </div>
                 </div>
                 <div class="align-self-center nav-item dropdown">
@@ -74,7 +74,7 @@
                     <div class="dropdown-menu fade-down mb-lg-0 mb-2">
                         <a href="information.html" class="dropdown-item">我的資訊</a>
                         <a href="healthy.html" class="dropdown-item">健康護照</a>
-                        <a href="record.html" class="dropdown-item">瀏覽紀錄</a>
+                        <a href="record.html" class="dropdown-item">購買紀錄</a>
                     </div>
                 </div>
                 <a href="login.html" class="btn-outline-primary py-lg-4 px-lg-5 fs-5-5" type="button">登入 / 註冊
@@ -85,7 +85,7 @@
     <!-- Navbar End -->
 
     <!-- login Start -->
-    <div class="container-xxl">
+    <div class="container-fluid p-0">
         <div class="row justify-content-center">
             <div class="form-signin col-xl-3 col-lg-4 col-md-5 col-sm-6 my-3">
                 <form class="bg-primary-2 p-3 pt-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -105,12 +105,22 @@
 
                     <div class="checkbox mt-3 mb-4 text-end me-2">
                         <label class="me-2">
-                            <input class="form-check-input me-1" type="checkbox">顯示密碼
+                            <input class="form-check-input me-1" type="checkbox" onclick="ShowloginPassword()">顯示密碼
                         </label>
                         <label>
                             <input class="form-check-input me-1" type="checkbox">記住密碼
                         </label>
                     </div>
+                    <script>
+                        function ShowloginPassword() {
+                            var x = document.getElementById("loginPassword");
+                            if (x.type === "password") {
+                                x.type = "text";
+                            } else {
+                                x.type = "password";
+                            }
+                        }
+                    </script>
                     <input class="btn-primary w-100 mb-5 rounded-3 fs-4-5" type="submit" value="登入">
                     <div class="text-center">
                         <a href="forget.html" class="link-secondary me-3"><i><u>忘記密碼</u></i></a>
@@ -122,7 +132,7 @@
     </div>
     <!-- login End -->
 
-    <div class="text-center"><a href="test.html" class="btn-outline-primary">測試用勿理</a></div>
+    <!--<div class="text-center"><a href="test.html" class="btn-outline-primary">測試用勿理</a></div>-->
 
     <!-- Footer Start -->
     <div class="container-fluid footer bg-danger wow fadeIn" data-wow-delay="0.1s">
@@ -133,7 +143,7 @@
                     <a class="btn btn-link" style="font-family: 源泉圓體;" href="about.html">關於我們</a>
                     <a class="btn btn-link" style="font-family: 源泉圓體;" href="search.html">查詢運動</a>
                     <a class="btn btn-link" style="font-family: 源泉圓體;" href="recommend.html">運動推薦</a>
-                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="reserve.html">預約課程</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="reserve.html">課程學習</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-primary-1 mb-3">聯絡資訊</h4>

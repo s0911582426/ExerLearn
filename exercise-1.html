@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>毛巾操 - 課程學習 - ExerLearn</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/icon.png" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">請稍後...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm sticky-top p-0">
+        <a href="home.html" class="navbar-brand d-sm-flex align-items-center d-none d-sm-block">
+            <img class="img-fluid p-4 pe-0" src="img/logo.png" style="max-height: 112px;width: auto;">
+        </a>
+        <a href="home.html" class="navbar-brand d-flex align-items-center d-sm-none">
+            <img class="img-fluid p-3 pe-0" src="img/logo.png" style="max-height: 92px;width: auto;">
+        </a>
+
+        <button type="button" class="navbar-toggler me-3 rounded-3 bg-primary-2"
+            style="padding-top: 5px;padding-bottom: 2px;padding-left: 14px;" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
+            <i class="bi bi-list text-primary" style="font-size: 30px;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto text-nowrap">
+                <a href="home.html" class="nav-item align-self-center nav">首頁</a>
+                <a href="about.html" class="nav-item align-self-center nav">關於我們</a>
+                <div class="align-self-center nav-item dropdown">
+                    <a class="nav dropdown-toggle active" data-bs-toggle="dropdown">學習天地</a>
+                    <div class="dropdown-menu fade-down">
+                        <a href="search.html" class="dropdown-item">查詢運動</a>
+                        <a href="recommend.html" class="dropdown-item">運動推薦</a>
+                        <a href="reserve.html" class="dropdown-item active">課程學習</a>
+                    </div>
+                </div>
+                <div class="align-self-center nav-item dropdown">
+                    <a class="nav dropdown-toggle me-lg-3" data-bs-toggle="dropdown">會員中心</a>
+                    <div class="dropdown-menu fade-down mb-lg-0 mb-2">
+                        <a href="information.html" class="dropdown-item">我的資訊</a>
+                        <a href="healthy.html" class="dropdown-item">健康護照</a>
+                        <a href="record.html" class="dropdown-item">購買紀錄</a>
+                    </div>
+                </div>
+                <a href="login.html" class="btn-outline-primary py-lg-4 px-lg-5 fs-5-5" type="button">登入 / 註冊
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- 課程學習(Learn) Start -->
+    <div class="container-xxl p-0">
+        <div class="row justify-content-center">
+            <div class="form-signin col-xl-6 col-lg-7 col-md-8 col-sm-9 col-12 mt-1">
+                <div class="wow fadeInDown" data-wow-delay="0.3s">
+                    <h2 class="text-center text-primary"><img class="pb-2" src="img/icon.png"
+                            style="height: 5%;width: 5%;margin-right: 15px;">課程學習<img class="pb-2" src="img/icon.png"
+                            style="height: 5%;width: 5%;margin-left: 15px;"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 課程學習(Learn) End -->
+
+    <!-- 預約課程(Reserve) Start -->
+    <div class="container-fluid p-0">
+        <div class="row justify-content-center">
+            <div class="form-signin col-lg-7 col-md-8 col-sm-9 col-12 mb-3">
+                <div class="position-relative bg-primary-2 p-3 wow fadeIn mx-auto" style="width: 85%;"
+                    data-wow-delay="0.4s">
+                    <div class="position-relative overflow-hidden mx-auto mb-3 wow fadeIn" data-wow-delay="0.2s"
+                        style="max-width: 28rem;border-radius: 1rem;">
+                        <img class="img-fluid w-100" src="img/search-1.png" alt="">
+                    </div>
+                    <div class="bg-white p-3 border wow fadeIn" data-wow-delay="0.2s" style="border-radius: 1rem;">
+                        <div class="row align-items-center justify-content-center" style="margin-bottom: 1rem;">
+                            <label class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
+                                style="font-size: large;text-align-last: justify;padding-right: 15px;">型態分類：</label>
+                            <div class="col-sm-8 col" style="text-align: justify;">有氧運動
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-center" style="margin-bottom: 1rem;">
+                            <label class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
+                                style="font-size: large;text-align-last: justify;padding-right: 15px;">運動名稱：</label>
+                            <div class="col-sm-8 col" style="text-align: justify;">毛巾操
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row align-items-center justify-content-center" style="margin-bottom: .5rem;">
+                                <label class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
+                                    style="font-size: large;text-align-last: justify;padding-right: 15px;">運動特色：</label>
+                                <div class="col-sm-8 col" style="text-align: justify;"></div>
+                            </div>
+                            <div class="row align-items-center justify-content-center" style="margin-bottom: 0rem;">
+                                <div class="col-sm-10 col" style="text-align: justify;">
+                                    <p class="pa mb-0">1.&ensp;適合年長者，輔助道具易取得。</p>
+                                    <p class="pa mb-4">2.&ensp;擺脫肩頸痠痛、五十肩用「毛巾伸展操」能有效改善。</p>
+                                    <p class="pa mb-4">
+                                        &emsp;&emsp;藉由毛巾拉伸所產生的助力和阻力，幫助增加延展力度，使伸展鍛鍊更具效果！其中，最重要的是，毛巾操動作溫和，較不會產生運動傷害，還可達到刺激淋巴、提升新陳進代謝、促進氣血循環並矯正不良姿勢和活化自律神經的效果。
+                                    </p>
+                                    <p class="pa mb-0">1.&ensp;<b>年長、重病、復健者：</b>可活化退化關節。</p>
+                                    <p class="pa mb-0">2.&ensp;<b>家庭主婦、上班族：</b>可改善失眠、全身痠痛。</p>
+                                    <p class="pa mb-0">3.&ensp;<b>肥胖者：</b>提升代謝、燃脂排廢。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 row align-items-center">
+                        <hr class="col">
+                        <p class="col-lg-2 col-sm-3 col-4 text-nowrap text-center pt-1 fs-5-5"
+                            style="color: rgba(38, 38, 38, 0.5);">報名資訊</p>
+                        <hr class="col">
+                    </div>
+                    <div class="bg-white border wow fadeIn" data-wow-delay="0.25s" style="border-radius: 1rem;">
+                        <div class="row align-items-center border-bottom">
+                            <label class="py-3 offset-sm-2 col-lg-2 col-sm-3 col-4 text-nowrap fw-bold border-end"
+                                style="font-size: large;text-align-last: justify;padding-right: 1rem;">學習難度</label>
+                            <div class="py-3 col-7" style="padding-left: 1rem;">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                        <div class="row align-items-center border-bottom">
+                            <label class="py-3 offset-sm-2 col-lg-2 col-sm-3 col-4 text-nowrap fw-bold border-end"
+                                style="font-size: large;text-align-last: justify;padding-right: 1rem;">對於新手</label>
+                            <div class="py-3 col-7" style="padding-left: 1rem;color: green;">推薦
+                            </div>
+                        </div>
+                        <div class="row align-items-center border-bottom">
+                            <label class="py-3 offset-sm-2 col-lg-2 col-sm-3 col-4 text-nowrap fw-bold border-end"
+                                style="font-size: large;text-align-last: justify;padding-right: 1rem;">課程價格</label>
+                            <div class="py-3 col-7" style="padding-left: 1rem;">NT<i
+                                    class="bi bi-currency-dollar me-1"></i>200
+                            </div>
+                        </div>
+                        <div class="row align-items-center border-bottom">
+                            <label class="py-3 offset-sm-2 col-lg-2 col-sm-3 col-4 text-nowrap fw-bold border-end"
+                                style="font-size: large;text-align-last: justify;padding-right: 1rem;">授課教師</label>
+                            <div class="py-3 col-7" style="padding-left: 1rem;">陳大福 老師
+                            </div>
+                        </div>
+                        <div class="row align-items-center border-bottom">
+                            <label class="py-3 offset-sm-2 col-lg-2 col-sm-3 col-4 text-nowrap fw-bold border-end"
+                                style="font-size: large;text-align-last: justify;padding-right: 1rem;">課程時間</label>
+                            <div class="py-3 col-7" style="padding-left: 1rem;">2022年6月1日 下午8：00 ~ 9：00
+                            </div>
+                        </div>
+                        <div class="row align-items-center border-bottom">
+                            <label class="py-3 offset-sm-2 col-lg-2 col-sm-3 col-4 text-nowrap fw-bold border-end"
+                                style="font-size: large;text-align-last: justify;padding-right: 1rem;">課程人數</label>
+                            <div class="py-3 col-7" style="padding-left: 1rem;">20人（滿人就截止，要搶要快！）
+                            </div>
+                        </div>
+                        <div class="row align-items-center border-bottom">
+                            <label class="py-3 offset-sm-2 col-lg-2 col-sm-3 col-4 text-nowrap fw-bold border-end"
+                                style="font-size: large;text-align-last: justify;padding-right: 1rem;">上課方式</label>
+                            <div class="py-3 col-7" style="padding-left: 1rem;">線上Google Meet（會寄信通知）
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <label class="py-3 offset-sm-2 col-lg-2 col-sm-3 col-4 text-nowrap fw-bold border-end"
+                                style="font-size: large;text-align-last: justify;padding-right: 1rem;">報名日期</label>
+                            <div class="py-3 col-7" style="padding-left: 1rem;">2022年5月25日 ~ 2022年5月31日
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center" style="margin-top: 6rem;">
+                        <a class="btn-primary col-4 me-5 rounded-3 fs-5" data-bs-toggle="modal"
+                            data-bs-target="#modalCheck">我要報名</a>
+                        <input class="btn-primary col-4 ms-3 rounded-3 fs-5" type="submit" value="自我學習">
+                    </div>
+
+                    <!--modalCheck Start-->
+                    <div class="modal fade" id="modalCheck" tabindex="-1" aria-labelledby="modalCheckLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <p class="modal-title text-danger" id="modalCheckLabel"
+                                        style="font-size: 1.25rem;padding-top: 5px;">報名須知</p>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start bg-primary-2">
+                                    <div class="mb-3 row align-items-center justify-content-center"
+                                        style="margin-bottom: 0rem;text-align: justify;">
+                                        <p class="pa mb-3">1.&ensp;請審慎評估自我身體狀態再進行報名。</p>
+                                        <p class="pa mb-0">2.&ensp;上課期間有任何不適請立即停止課程活動，並告知當日講師。</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn-secondary rounded-3" style="padding-top: .35rem;"
+                                        data-bs-dismiss="modal">取消</button>
+                                    <a class="btn-primary rounded-3" type="submit" style="padding-top: .35rem;"
+                                        href="#">確認</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--modalCheck End-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 預約課程(Reserve) End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-danger wow fadeIn" data-wow-delay="0.1s">
+        <div class="container pt-2 pb-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 ">
+                    <h4 class="text-primary-1 mb-3">快速連結</h4>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="about.html">關於我們</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="search.html">查詢運動</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="recommend.html">運動推薦</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="reserve.html">課程學習</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary-1 mb-3">聯絡資訊</h4>
+                    <p class="mb-2 text-white"><i class="fa fa-map-marker-alt me-3 text-white"></i>國立高雄科技大學 資訊管理系</p>
+                    <p class="mb-2 text-white"><i class="fa fa-envelope me-3 text-white"></i>C108118107@nkust.edu.tw</p>
+                    <p class="mb-2 text-white"><i class="fa fa-envelope me-3 text-white"></i>C108118113@nkust.edu.tw</p>
+                    <p class="mb-2 text-white"><i class="fa fa-envelope me-3 text-white"></i>C108118114@nkust.edu.tw</p>
+                    <p class="mb-2 text-white"><i class="fa fa-envelope me-3 text-white"></i>C108118117@nkust.edu.tw</p>
+                    <!--<div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>-->
+                </div>
+                <!--<div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <div class="container text-white">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; 2022 ExerLearn - 國立高雄科技大學 資訊管理系 專題製作</div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="home.html" class="text-white">首頁</a>
+                            <a href="question.html" class="text-white">問題</a>
+                            <a href="help.html" class="text-white">幫助</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a class="btn-lg btn-primary btn-lg-square back-to-top d-none d-sm-block" style="padding-top: 10px;"><i
+            class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

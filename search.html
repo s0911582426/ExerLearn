@@ -66,7 +66,7 @@
                     <div class="dropdown-menu fade-down">
                         <a href="search.html" class="dropdown-item active">查詢運動</a>
                         <a href="recommend.html" class="dropdown-item">運動推薦</a>
-                        <a href="reserve.html" class="dropdown-item">預約課程</a>
+                        <a href="reserve.html" class="dropdown-item">課程學習</a>
                     </div>
                 </div>
                 <div class="align-self-center nav-item dropdown">
@@ -74,7 +74,7 @@
                     <div class="dropdown-menu fade-down mb-lg-0 mb-2">
                         <a href="information.html" class="dropdown-item">我的資訊</a>
                         <a href="healthy.html" class="dropdown-item">健康護照</a>
-                        <a href="record.html" class="dropdown-item">瀏覽紀錄</a>
+                        <a href="record.html" class="dropdown-item">購買紀錄</a>
                     </div>
                 </div>
                 <a href="login.html" class="btn-outline-primary py-lg-4 px-lg-5 fs-5-5" type="button">登入 / 註冊
@@ -84,7 +84,121 @@
     </nav>
     <!-- Navbar End -->
 
+    <script>
+        function toggle_visibility(id) {
+            var e = document.getElementById(id);
+            if (e.style.display == 'block' || e.style.display == '') {
+                e.style.display = 'none';
+            }
+            else {
+                e.style.display = 'block';
+            }
+        }
+    </script>
 
+    <!-- 查詢運動(Search) Start -->
+    <div class="container-xxl p-0">
+        <div class="row justify-content-center">
+            <div class="form-signin col-xl-6 col-lg-7 col-md-8 col-sm-9 col-12 mt-1">
+                <div class="wow fadeInDown" data-wow-delay="0.3s">
+                    <h2 class="text-center text-primary"><img class="pb-2" src="img/icon.png"
+                            style="height: 5%;width: 5%;margin-right: 15px;">查詢運動<img class="pb-2" src="img/icon.png"
+                            style="height: 5%;width: 5%;margin-left: 15px;"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="row justify-content-center">
+            <div class="form-signin col-lg-7 col-md-8 col-sm-9 col-12 mb-3">
+                <div class="position-relative bg-primary-2 p-3 wow fadeIn mx-auto" style="width: 85%;"
+                    data-wow-delay="0.4s">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-sm-3 col-4 me-2">
+                            <select class="form-select rounded-3" aria-label="Default select example">
+                                <option selected>型態分類</option>
+                                <option value="1">輕度運動</option>
+                                <option value="2">中度運動</option>
+                                <option value="3">重度運動</option>
+                                <option value="4">有氧運動</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-7 col me-2">
+                            <input type="text" class="form-control rounded-3" id="inputsearch" type="search"
+                                maxlength="30" placeholder="請輸入運動名稱" required>
+                        </div>
+                        <div class="col">
+                            <button class="btn-primary col rounded-3 fs-5 text-nowrap"
+                                onclick="toggle_visibility('hideMe')"
+                                style="padding-top: .375rem;padding-left: 2.9rem;padding-right: 2.9rem;" type="submit">
+                                <i class="bi bi-search me-2"></i>查詢</button>
+                        </div>
+                    </div>
+
+                    <div id="hideMe" style="display: none;margin-top: 5rem;">
+                        <h5 class="m-0" style="padding-bottom:2rem;text-align: justify;">找到以下結果...</h5>
+                        <div class="position-relative overflow-hidden mx-auto mb-3 wow fadeIn" data-wow-delay="0.2s"
+                            style="max-width: 28rem;border-radius: 1rem;">
+                            <img class="img-fluid w-100" src="img/search-2.png" alt="">
+                        </div>
+                        <div class="bg-white p-3 border wow fadeIn" data-wow-delay="0.2s" style="border-radius: 1rem;">
+                            <div class="row align-items-center justify-content-center" style="margin-bottom: 1rem;">
+                                <label class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
+                                    style="font-size: large;text-align-last: justify;padding-right: 15px;">型態分類：</label>
+                                <div class="col-sm-8 col" style="text-align: justify;">有氧運動
+                                </div>
+                            </div>
+                            <div class="row align-items-center justify-content-center" style="margin-bottom: 1rem;">
+                                <label class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
+                                    style="font-size: large;text-align-last: justify;padding-right: 15px;">運動名稱：</label>
+                                <div class="col-sm-8 col" style="text-align: justify;">TABATA
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row align-items-center justify-content-center"
+                                    style="margin-bottom: .5rem;">
+                                    <label class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
+                                        style="font-size: large;text-align-last: justify;padding-right: 15px;">運動特色：</label>
+                                    <div class="col-sm-8 col" style="text-align: justify;"></div>
+                                </div>
+                                <div class="row align-items-center justify-content-center" style="margin-bottom: 1rem;">
+                                    <div class="col-sm-10 col" style="text-align: justify;">
+                                        <p class="pa">&emsp;&emsp;根據2019年英國醫學期刊（British Medical
+                                            Journal）的文獻指出，若想達到一樣燃燒熱量的效果，「間歇運動」比持續有氧運動節省26%的時間，別以為只有飲食可以採間歇性斷食，連運動也要間歇。
+                                        </p>
+                                        <p class="pa mb-0">&emsp;&emsp;可利用此運動，以達到更有效率的減脂。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row align-items-center justify-content-center"
+                                    style="margin-bottom: .5rem;">
+                                    <label class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
+                                        style="font-size: large;text-align-last: justify;padding-right: 15px;">學習方法：</label>
+                                    <div class="col-sm-8 col" style="text-align: justify;"></div>
+                                </div>
+                                <div class="row align-items-center justify-content-center" style="margin-bottom: 0rem;">
+                                    <div class="col-sm-10 col" style="text-align: justify;">
+                                        <p class="pa">
+                                            &emsp;&emsp;循環做「高低強度落差大的動作」，無論是有氧運動（跑步、騎腳踏車）、肌力訓練（深蹲、橋式、仰臥起坐、伏地挺身等）皆可組成間歇運動。
+                                        </p>
+                                        <p class="pa mb-0">
+                                            &emsp;&emsp;例如：你可以快跑1分鐘，再慢慢跑4分鐘，接著快跑、再慢跑，以此循環下去；若騎腳踏車，則可騎上坡搭配平地，在健身房則可調整阻力，組成間歇運動；至於持續有氧，則是以均勻的速度持續一運動。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center" style="margin-top: 6rem;">
+                            <a href="exercise-2.html" class="btn-primary col-4 me-5 rounded-3 fs-5">課程學習</a>
+                            <input class="btn-primary col-4 ms-3 rounded-3 fs-5" type="submit" value="自我學習">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 查詢運動(Search) End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer bg-danger wow fadeIn" data-wow-delay="0.1s">
@@ -95,7 +209,7 @@
                     <a class="btn btn-link" style="font-family: 源泉圓體;" href="about.html">關於我們</a>
                     <a class="btn btn-link" style="font-family: 源泉圓體;" href="search.html">查詢運動</a>
                     <a class="btn btn-link" style="font-family: 源泉圓體;" href="recommend.html">運動推薦</a>
-                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="reserve.html">預約課程</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="reserve.html">課程學習</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-primary-1 mb-3">聯絡資訊</h4>

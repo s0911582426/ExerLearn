@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>修改密碼 - ExerLearn</title>
+    <title>修改密碼 - 我的資訊 - ExerLearn</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -66,15 +66,15 @@
                     <div class="dropdown-menu fade-down">
                         <a href="search.html" class="dropdown-item">查詢運動</a>
                         <a href="recommend.html" class="dropdown-item">運動推薦</a>
-                        <a href="reserve.html" class="dropdown-item">預約課程</a>
+                        <a href="reserve.html" class="dropdown-item">課程學習</a>
                     </div>
                 </div>
                 <div class="align-self-center nav-item dropdown">
-                    <a class="nav dropdown-toggle me-lg-3" data-bs-toggle="dropdown">會員中心</a>
+                    <a class="nav dropdown-toggle me-lg-3 active" data-bs-toggle="dropdown">會員中心</a>
                     <div class="dropdown-menu fade-down mb-lg-0 mb-2">
-                        <a href="information.html" class="dropdown-item">我的資訊</a>
+                        <a href="information.html" class="dropdown-item active">我的資訊</a>
                         <a href="healthy.html" class="dropdown-item">健康護照</a>
-                        <a href="record.html" class="dropdown-item">瀏覽紀錄</a>
+                        <a href="record.html" class="dropdown-item">購買紀錄</a>
                     </div>
                 </div>
                 <a href="login.html" class="btn-outline-primary py-lg-4 px-lg-5 fs-5-5" type="button">登入 / 註冊
@@ -84,7 +84,76 @@
     </nav>
     <!-- Navbar End -->
 
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-2-5 bg-primary-2 shadow-side">
+                <!-- Beside Navbar Start -->
+                <nav class="nav flex-column"
+                    style="height: 40rem;overflow:auto;padding-inline: 2rem;padding-block: 2rem;">
+                    <a class="nav-link" href="information.html">
+                        <i class="bi bi-caret-right-fill ms-1 me-2"></i>個人資料</a>
+                    <a class="nav-link" href="payment.html">
+                        <i class="bi bi-caret-right-fill ms-1 me-2"></i>付款資料</a>
+                    <a class="nav-link">
+                        <i class="bi bi-caret-right-fill ms-1 me-2"></i>更換頭貼</a>
+                    <a class="nav-link active" aria-current="page">
+                        <i class="bi bi-caret-right-fill ms-1 me-2"></i>修改密碼</a>
+                </nav>
+                <!-- Beside Navbar End -->
+            </div>
 
+            <div class="col-9">
+                <!-- 個人資料(Personal) Start -->
+                <div class="container-xxl p-0">
+                    <div class="row justify-content-center">
+                        <div class="form-signin col-xl-6 col-lg-7 col-md-8 col-sm-9 col-12 mt-1">
+                            <div class="wow fadeInDown" data-wow-delay="0.3s">
+                                <h2 class="text-center text-primary"><img class="pb-2" src="img/icon.png"
+                                        style="height: 5%;width: 5%;margin-right: 15px;">修改密碼<img class="pb-2"
+                                        src="img/icon.png" style="height: 5%;width: 5%;margin-left: 15px;"></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid p-0">
+                    <div class="row justify-content-center">
+                        <div class="form-signin col-sm-9 col-12 mb-3">
+                            <div class="bg-primary-2 p-3 wow fadeIn mx-auto" style="width: 85%;" data-wow-delay="0.4s">
+                                <div class="mb-3 bg-white border wow fadeIn" data-wow-delay="0.2s"
+                                    style="border-radius: 1rem;">
+                                    <div class="row align-items-center">
+                                        <label
+                                            class="py-3 offset-sm-1 col-lg-2 col-sm-3 col-4 text-nowrap fw-bold border-end"
+                                            style="font-size: large;text-align-last: justify;padding-right: 1rem;">帳號</label>
+                                        <div class="py-3 col-8" style="padding-left: 1rem;">C108118000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border wow fadeIn" data-wow-delay="0.3s"
+                                    style="border-radius: 1rem;">
+                                    <div class="row align-items-center">
+                                        <label
+                                            class="py-3 offset-sm-1 col-lg-2 col-sm-3 col-4 text-nowrap fw-bold border-end"
+                                            style="font-size: large;text-align-last: justify;padding-right: 1rem;">密碼</label>
+                                        <div class="py-3 col-7" style="font-size: 0.5rem;padding-left: 1rem;">
+                                            ●&ensp;●&ensp;●&ensp;●&ensp;●&ensp;●
+                                        </div>
+                                        <div class="py-3 col-1" style="padding-left: 1rem;">
+                                            <i class="text-primary col-auto bi bi-eye-fill fs-5 ms-2"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center" style="margin-top: 6rem;">
+                                    <input class="btn-primary col-4 rounded-3 fs-5" type="submit" value="變更密碼">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 個人資料(Personal) End -->
+            </div>
+        </div>
+    </div>
 
     <!-- Footer Start -->
     <div class="container-fluid footer bg-danger wow fadeIn" data-wow-delay="0.1s">
@@ -95,7 +164,7 @@
                     <a class="btn btn-link" style="font-family: 源泉圓體;" href="about.html">關於我們</a>
                     <a class="btn btn-link" style="font-family: 源泉圓體;" href="search.html">查詢運動</a>
                     <a class="btn btn-link" style="font-family: 源泉圓體;" href="recommend.html">運動推薦</a>
-                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="reserve.html">預約課程</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="reserve.html">課程學習</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-primary-1 mb-3">聯絡資訊</h4>

@@ -66,7 +66,7 @@
                     <div class="dropdown-menu fade-down">
                         <a href="search.html" class="dropdown-item">查詢運動</a>
                         <a href="recommend.html" class="dropdown-item active">運動推薦</a>
-                        <a href="reserve.html" class="dropdown-item">預約課程</a>
+                        <a href="reserve.html" class="dropdown-item">課程學習</a>
                     </div>
                 </div>
                 <div class="align-self-center nav-item dropdown">
@@ -74,7 +74,7 @@
                     <div class="dropdown-menu fade-down mb-lg-0 mb-2">
                         <a href="information.html" class="dropdown-item">我的資訊</a>
                         <a href="healthy.html" class="dropdown-item">健康護照</a>
-                        <a href="record.html" class="dropdown-item">瀏覽紀錄</a>
+                        <a href="record.html" class="dropdown-item">購買紀錄</a>
                     </div>
                 </div>
                 <a href="login.html" class="btn-outline-primary py-lg-4 px-lg-5 fs-5-5" type="button">登入 / 註冊
@@ -84,7 +84,177 @@
     </nav>
     <!-- Navbar End -->
 
+    <script>
+        function toggle_visibility(id) {
+            var e = document.getElementById(id);
+            if (e.style.display == 'block' || e.style.display == '') {
+                e.style.display = 'none';
+            }
+            else {
+                e.style.display = 'block';
+            }
+        }
+    </script>
 
+    <!-- 運動推薦(Recommend) Start -->
+    <div class="container-xxl p-0">
+        <div class="row justify-content-center">
+            <div class="form-signin col-xl-6 col-lg-7 col-md-8 col-sm-9 col-12 mt-1">
+                <div class="wow fadeInDown" data-wow-delay="0.3s">
+                    <h2 class="text-center text-primary"><img class="pb-2" src="img/icon.png"
+                            style="height: 5%;width: 5%;margin-right: 15px;">運動推薦<img class="pb-2" src="img/icon.png"
+                            style="height: 5%;width: 5%;margin-left: 15px;"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="row justify-content-center">
+            <div class="form-signin col-lg-7 col-md-8 col-sm-9 col-12 mb-3">
+                <div class="position-relative bg-primary-2 p-3 wow fadeIn mx-auto" style="width: 85%;"
+                    data-wow-delay="0.4s">
+                    <h5 class="m-0" style="padding-bottom:2rem;text-align: justify;">請填選以下問題，填越多越準確喔！</h5>
+                    <div class="mt-3 row align-items-center">
+                        <hr class="col">
+                        <p class="col-lg-2 col-sm-3 col-4 text-nowrap text-center pt-1 fs-5-5"
+                            style="color: rgba(38, 38, 38, 0.5);">基本資料</p>
+                        <hr class="col">
+                    </div>
+                    <div class="mb-3 row align-items-center">
+                        <label class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">生理性別</label>
+                        <div class="col-sm-1 col-2 form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioGender1"
+                                value="option1" required>
+                            <label class="form-check-label" for="radioGender1">男</label>
+                        </div>
+                        <div class="col-1 form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioGender2"
+                                value="option2" required>
+                            <label class="form-check-label" for="radioGender2">女</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 row align-items-center">
+                        <label class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">年齡</label>
+                        <div class="col-sm-3 col me-2">
+                            <input type="number" class="form-control rounded-3" type="search" maxlength="3" max="100"
+                                min="0" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="mb-3 row align-items-center">
+                        <label class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">職業</label>
+                        <div class="col-lg-3 col-sm-3 col-4 me-2">
+                            <select class="form-select rounded-3" aria-label="Default select example">
+                                <option selected>請選擇</option>
+                                <option value="1">學生</option>
+                                <option value="2">工人</option>
+                                <option value="3">上班族</option>
+                                <option value="4">家庭主婦</option>
+                                <option value="4">其他</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-5 col me-2">
+                            <input type="text" class="form-control rounded-3" type="search" maxlength="30"
+                                placeholder="選其他者請輸入" required>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <label class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">體重狀況</label>
+                        <div class="col-lg-3 col-sm-3 col-4" style="margin-right: .55rem;">
+                            <select class="form-select rounded-3" aria-label="Default select example">
+                                <option selected>請選擇</option>
+                                <option value="1">過輕（BMI < 18.5）</option>
+                                <option value="2">正常（18.5 ≤ BMI < 24）</option>
+                                <option value="3">過重（24 ≤ BMI < 27）</option>
+                                <option value="4">肥胖（BMI ≥ 27）</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-5 col me-2">
+                            <a href="BMI.html" class="link-secondary me-3" target="_blank"><i><u>BMI值計算器</u></i></a>
+                        </div>
+                    </div>
+                    <div class="mt-5 row align-items-center">
+                        <hr class="col">
+                        <p class="col-lg-2 col-sm-3 col-4 text-nowrap text-center pt-1 fs-5-5"
+                            style="color: rgba(38, 38, 38, 0.5);">運動需求</p>
+                        <hr class="col">
+                    </div>
+                    <div class="mb-3 row align-items-center">
+                        <label class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">運動目的</label>
+                        <div class="col-lg-3 col-sm-3 col-4 me-2">
+                            <select class="form-select rounded-3" aria-label="Default select example">
+                                <option selected>請選擇</option>
+                                <option value="1">減重</option>
+                                <option value="2">鍛鍊</option>
+                                <option value="3">復健</option>
+                                <option value="4">興趣</option>
+                                <option value="4">其他</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-5 col me-2">
+                            <input type="text" class="form-control rounded-3" type="search" maxlength="30"
+                                placeholder="選其他者請輸入" required>
+                        </div>
+                    </div>
+                    <div class="mb-3 row align-items-center">
+                        <label class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">運動新手</label>
+                        <div class="col-sm-1 col-2 form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioGender1"
+                                value="option1" required>
+                            <label class="form-check-label" for="radioGender1">是</label>
+                        </div>
+                        <div class="col-1 form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioGender2"
+                                value="option2" required>
+                            <label class="form-check-label" for="radioGender2">否</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 row align-items-center">
+                        <label class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">運動次數</label>
+                        <div class="col-lg-3 col-sm-3 col-4 me-2">
+                            <select class="form-select rounded-3" aria-label="Default select example">
+                                <option selected>請選擇</option>
+                                <option value="1">不固定</option>
+                                <option value="2">1 ~ 3</option>
+                                <option value="3">4 ~ 6</option>
+                                <option value="4">每一天</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-10 offset-lg-2 col-sm-7 offset-sm-3 col offset-4">
+                            <p class="col-form-label" style="font-size: smaller;text-align: justify;">
+                                請選擇平均一週想要運動幾天。</p>
+                        </div>
+                    </div>
+                    <div class="mb-3 row align-items-center">
+                        <label class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">運動地點</label>
+                        <div class="col-lg-3 col-sm-3 col-4 me-2">
+                            <select class="form-select rounded-3" aria-label="Default select example">
+                                <option selected>請選擇</option>
+                                <option value="1">室內</option>
+                                <option value="2">戶外</option>
+                                <option value="3">都可以</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-lg-10 offset-lg-2 col-sm-7 offset-sm-3 col offset-4">
+                            <p class="col-form-label" style="font-size: smaller;text-align: justify;">
+                                請依照自己需求或喜好選擇。</p>
+                        </div>
+                    </div>
+                    <div class="text-center" style="margin-top: 6rem;">
+                        <input class="btn-primary col-4 rounded-3 fs-5" type="submit" value="開始分析">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 運動推薦(Recommend) End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer bg-danger wow fadeIn" data-wow-delay="0.1s">
@@ -95,7 +265,7 @@
                     <a class="btn btn-link" style="font-family: 源泉圓體;" href="about.html">關於我們</a>
                     <a class="btn btn-link" style="font-family: 源泉圓體;" href="search.html">查詢運動</a>
                     <a class="btn btn-link" style="font-family: 源泉圓體;" href="recommend.html">運動推薦</a>
-                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="reserve.html">預約課程</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="reserve.html">課程學習</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-primary-1 mb-3">聯絡資訊</h4>

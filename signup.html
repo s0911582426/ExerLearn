@@ -66,7 +66,7 @@
                     <div class="dropdown-menu fade-down">
                         <a href="search.html" class="dropdown-item">查詢運動</a>
                         <a href="recommend.html" class="dropdown-item">運動推薦</a>
-                        <a href="reserve.html" class="dropdown-item">預約課程</a>
+                        <a href="reserve.html" class="dropdown-item">課程學習</a>
                     </div>
                 </div>
                 <div class="align-self-center nav-item dropdown">
@@ -74,7 +74,7 @@
                     <div class="dropdown-menu fade-down mb-lg-0 mb-2">
                         <a href="information.html" class="dropdown-item">我的資訊</a>
                         <a href="healthy.html" class="dropdown-item">健康護照</a>
-                        <a href="record.html" class="dropdown-item">瀏覽紀錄</a>
+                        <a href="record.html" class="dropdown-item">購買紀錄</a>
                     </div>
                 </div>
                 <a href="login.html" class="btn-outline-primary py-lg-4 px-lg-5 fs-5-5" type="button">登入 / 註冊
@@ -85,17 +85,22 @@
     <!-- Navbar End -->
 
     <!-- signup Start -->
-    <div class="container-xxl">
+    <div class="container-xxl p-0">
         <div class="row justify-content-center">
-            <div class="form-signin col-xl-6 col-lg-7 col-md-8 col-sm-9 col-12 my-3">
-                <div class="wow fadeInDown mt-3" data-wow-delay="0.3s">
+            <div class="form-signin col-xl-6 col-lg-7 col-md-8 col-sm-9 col-12 mt-1">
+                <div class="wow fadeInDown" data-wow-delay="0.3s">
                     <h2 class="text-center text-primary"><img class="pb-2" src="img/icon.png"
                             style="height: 5%;width: 5%;margin-right: 15px;">註冊會員<img class="pb-2" src="img/icon.png"
                             style="height: 5%;width: 5%;margin-left: 15px;"></h2>
                 </div>
-
-                <form class="bg-primary-2 p-3 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="mb-3 row align-items-center">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="row justify-content-center">
+            <div class="form-signin col-lg-7 col-md-8 col-sm-9 col-12 mb-3">
+                <div class="bg-primary-2 p-3 wow fadeIn mx-auto" style="width: 85%;" data-wow-delay="0.4s">
+                    <div class="row align-items-center">
                         <hr class="col">
                         <p class="col-lg-2 col-sm-3 col-4 text-nowrap text-center pt-1 fs-5-5"
                             style="color: rgba(38, 38, 38, 0.5);">個人資料</p>
@@ -103,7 +108,7 @@
                     </div>
                     <div class="mb-3 row align-items-center">
                         <label for="inputName" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
-                            style="text-align-last: justify;padding-right: 20px;">姓名</label>
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">姓名</label>
                         <div class="col-lg-5 col-sm-7 col">
                             <input type="text" class="form-control rounded-3" id="inputName" type="text" maxlength="10"
                                 required>
@@ -111,14 +116,14 @@
                     </div>
                     <div class="mb-3 row align-items-center">
                         <label for="inputBirthday" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
-                            style="text-align-last: justify;padding-right: 20px;">生日</label>
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">生日</label>
                         <div class="col-lg-5 col-sm-7 col">
                             <input type="date" class="form-control rounded-3" id="inputBirthday" required>
                         </div>
                     </div>
                     <div class="mb-3 row align-items-center">
                         <label for="inputGender" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
-                            style="text-align-last: justify;padding-right: 20px;">生理性別</label>
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">生理性別</label>
                         <div class="col-sm-1 col-2 form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioGender1"
                                 value="option1" required>
@@ -132,14 +137,15 @@
                     </div>
                     <div class="mb-5 row align-items-center">
                         <label for="inputEmail" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
-                            style="text-align-last: justify;padding-right: 20px;">電子信箱</label>
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">電子信箱</label>
                         <div class="col-lg-5 col-sm-7 col-9 me-2">
                             <input type="email" class="form-control rounded-3" id="inputEmail"
                                 placeholder="name@example.com" required>
                         </div>
                         <div class="col">
-                            <a class="btn-primary btn-sm rounded-3 fw-normal" style="padding: 5px 15px 3px 15px;"
-                                data-bs-toggle="modal" data-bs-target="#modalVerify">驗證</a>
+                            <a class="btn-primary btn-sm rounded-3"
+                                style="font-size: 1.05rem;padding: 5px 15px 3px 15px;" data-bs-toggle="modal"
+                                data-bs-target="#modalVerify">驗證</a>
                         </div>
 
                         <!--modalVerify Start-->
@@ -147,16 +153,16 @@
                             aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
-                                    <div class="modal-header bg-primary-2">
+                                    <div class="modal-header">
                                         <p class="modal-title text-danger" id="modalVerifyLabel"
                                             style="font-size: 1.25rem;padding-top: 5px;">驗證電子信箱</p>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body text-start">
+                                    <div class="modal-body text-start bg-primary-2">
                                         <div class="mb-3 row align-items-center">
                                             <label for="inputTel1" class="col-lg-2 col-3 text-nowrap fw-bold"
-                                                style="text-align-last: justify;padding-right: 15px;">電子信箱</label>
+                                                style="font-size: large;text-align-last: justify;padding-right: 15px;">電子信箱</label>
                                             <div class="col-lg-9 col-sm-11 col">
                                                 <input type="email" class="form-control rounded-3" id="inputEmail"
                                                     placeholder="name@example.com" required>
@@ -164,14 +170,14 @@
                                         </div>
                                         <div class="row align-items-center">
                                             <label for="inputVerify" class="col-lg-2 col-3 text-nowrap fw-bold"
-                                                style="text-align-last: justify;padding-right: 15px;">驗證碼</label>
+                                                style="font-size: large;text-align-last: justify;padding-right: 15px;">驗證碼</label>
                                             <div class="col-lg-5 col-sm-7 col me-2">
                                                 <input type="tel" class="form-control rounded-3 text-center"
                                                     id="inputVerify" maxlength="6" required>
                                             </div>
                                             <div class="col">
                                                 <button class="btn-primary btn-sm rounded-3 fw-normal text-nowrap"
-                                                    style="padding: 5px 15px 3px 15px;">發送驗證碼</button>
+                                                    style="font-size: 1.05rem;padding: 5px 15px 3px 15px;">發送驗證碼</button>
                                             </div>
                                         </div>
                                     </div>
@@ -186,7 +192,7 @@
                         </div>
                         <!--modalVerify End-->
                     </div>
-                    <div class="mb-3 row align-items-center">
+                    <div class="mt-3 row align-items-center">
                         <hr class="col">
                         <p class="col-lg-2 col-sm-3 col-4 text-nowrap text-center pt-1 fs-5-5"
                             style="color: rgba(38, 38, 38, 0.5);">付款資料</p>
@@ -194,7 +200,7 @@
                     </div>
                     <div class="mb-3 row align-items-center">
                         <label for="inputName1" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
-                            style="text-align-last: justify;padding-right: 20px;">持卡人姓名</label>
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">持卡人姓名</label>
                         <div class="col-lg-5 col-sm-7 col">
                             <input type="text" class="form-control rounded-3" id="inputName1" type="text"
                                 maxlength="10">
@@ -202,7 +208,7 @@
                     </div>
                     <div class="mb-3 row align-items-center">
                         <label for="inputName1" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
-                            style="text-align-last: justify;padding-right: 20px;">信用卡卡號</label>
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">信用卡卡號</label>
                         <p class="col-lg-auto col-8 col-form-label"></p>
                         <div class="col-lg-1-5 col-sm-2 col-2-5">
                             <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
@@ -226,7 +232,7 @@
                     </div>
                     <div class="mb-3 row align-items-center">
                         <label for="inputName1" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
-                            style="text-align-last: justify;padding-right: 20px;">有效期限</label>
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">有效期限</label>
                         <p class="col-lg-auto col-8 col-form-label"></p>
                         <div class="col-lg-1-5 col-sm-2 col-2-5">
                             <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
@@ -238,7 +244,7 @@
                                 maxlength="2" placeholder="YY">
                         </div>
                         <label for="inputName1" class="col-sm-1-5 col-2-5 text-nowrap fw-bold"
-                            style="text-align-last: justify;padding-right: 20px;">安全碼</label>
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">安全碼</label>
                         <div class="col-lg-1-5 col-sm-2 col-2-5">
                             <input type="text" class="form-control rounded-3 text-center" id="inputName1" type="text"
                                 maxlength="3" placeholder="123">
@@ -246,7 +252,7 @@
                     </div>
                     <div class="mb-3 row align-items-center">
                         <label for="inputTel2" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
-                            style="text-align-last: justify;padding-right: 20px;">手機號碼</label>
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">手機號碼</label>
                         <div class="col-lg-5 col-sm-7 col me-2">
                             <input type="text" class="form-control rounded-3" id="inputTel2" type="text" maxlength="10"
                                 placeholder="0912345678">
@@ -254,7 +260,7 @@
                     </div>
                     <div class="row align-items-center">
                         <label for="inputAddress" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
-                            style="text-align-last: justify;padding-right: 20px;">帳單地址</label>
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">帳單地址</label>
                         <p class="col-lg-auto col-8 col-form-label"></p>
                         <div class="col-lg-2 col-sm-3 col-4 me-2 mb-1">
                             <input type="text" class="form-control rounded-3 text-center" placeholder="郵遞區號"
@@ -278,7 +284,7 @@
                     <div class="col-lg-10 offset-lg-2 col-12 mb-5">
                         <input type="text" class="form-control rounded-3" id="inputAddress">
                     </div>
-                    <div class="mb-3 row align-items-center">
+                    <div class="mt-3 row align-items-center">
                         <hr class="col">
                         <p class="col-lg-2 col-sm-3 col-4 text-nowrap text-center pt-1 fs-5-5"
                             style="color: rgba(38, 38, 38, 0.5);">登入資料</p>
@@ -286,7 +292,7 @@
                     </div>
                     <div class="row align-items-center">
                         <label for="inputAccount" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
-                            style="text-align-last: justify;padding-right: 20px;">帳號</label>
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">帳號</label>
                         <div class="col-lg-5 col-sm-7 col">
                             <input type="text" class="form-control rounded-3" id="inputAccount" required>
                         </div>
@@ -297,7 +303,7 @@
                     </div>
                     <div class="row align-items-center">
                         <label for="inputPassword" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
-                            style="text-align-last: justify;padding-right: 20px;">密碼</label>
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">密碼</label>
                         <div class="col-lg-5 col-sm-7 col">
                             <input type="password" class="form-control rounded-3" id="inputPassword" required>
                         </div>
@@ -310,7 +316,7 @@
                     </div>
                     <div class="row align-items-center" style="margin-bottom: 100px;">
                         <label for="inputPasswordCheck" class="col-lg-2 col-sm-3 col-4 text-nowrap fw-bold"
-                            style="text-align-last: justify;padding-right: 20px;">確認密碼</label>
+                            style="font-size: large;text-align-last: justify;padding-right: 20px;">確認密碼</label>
                         <div class="col-lg-5 col-sm-7 col">
                             <input type="password" class="form-control rounded-3" id="inputPasswordCheck" required>
                         </div>
@@ -328,10 +334,9 @@
                         <input class="btn-primary col-4 me-5 rounded-3 fs-5" type="submit" value="送出">
                         <input class="btn-primary col-4 ms-3 rounded-3 fs-5" type="reset" value="清除">
                     </div>
-                </form>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- signup End -->
 
@@ -344,7 +349,7 @@
                     <a class="btn btn-link" style="font-family: 源泉圓體;" href="about.html">關於我們</a>
                     <a class="btn btn-link" style="font-family: 源泉圓體;" href="search.html">查詢運動</a>
                     <a class="btn btn-link" style="font-family: 源泉圓體;" href="recommend.html">運動推薦</a>
-                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="reserve.html">預約課程</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="reserve.html">課程學習</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-primary-1 mb-3">聯絡資訊</h4>
